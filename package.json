@@ -4,14 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "preinstall": "curl -L https://unpkg.com/@pnpm/self-installer | node",
-    "install": "pnpm install",
-    "start": "pnpm start",
+    "start": "npm start",
     "dev": "nodemon server.js",
     "tailwind": "npx tailwindcss build index.css -o public/css/index.css",
-    "client": "cd client && pnpm run dev",
+    "client": "cd client && npm run dev",
     "autoprefixer": "postcss puclic/css/index.css -u autoprefixer --no-map -o public/css/index.min.css",
-    "production": "pnpm run tailwind && pnpm run autoprefixer && pnpm run minify",
+    "production": "npm run tailwind && npm run autoprefixer && npm run minify",
     "heroku-postbuild": "npm run install-client && npm run build"
   },
   "engines": {
