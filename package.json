@@ -10,7 +10,7 @@
     "heroku-postbuild": "pnpm run install-client "
   },
   "engines": {
-    "node": "ES6"
+    "node": "18.x"
   },
   "keywords": [],
   "author": "",
