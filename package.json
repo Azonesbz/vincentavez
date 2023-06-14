@@ -10,6 +10,7 @@
     "client": "cd client && npm run dev",
     "autoprefixer": "postcss puclic/css/index.css -u autoprefixer --no-map -o public/css/index.min.css",
     "production": "npm run tailwind && npm run autoprefixer && npm run minify",
+    "install-client": "cd client && npm install",
     "heroku-postbuild": "npm run install-client && npm run build"
   },
   "engines": {
