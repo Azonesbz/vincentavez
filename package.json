@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "cd client && pnpm run build"
+
+    "build": "cd client && pnpm install && pnpm run build"
   },
   "keywords": [],
   "author": "",
