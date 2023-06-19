@@ -1,10 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://use.typekit.net/ldo0elt.css");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
 h1 {
-    font-family: poppins, Geneva, Tahoma, sans-serif;
+    font-family: gigalypse, Geneva, Tahoma, sans-serif;
     font-size: 46px;
+    font-weight: 300;
+}
+h2 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 22px;
+}
+a, p, i, Link {
+    font-family: "elza", Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+    font-size: 18px;
 }
