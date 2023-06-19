@@ -4,3 +4,7 @@
     -webkit-background-clip: text; /* Pour une compatibilité avec certains navigateurs */
     color: transparent;
   }
+
+.image {
+    border-radius: 75% 25% 75% 25% / 25% 75% 25% 75% ;
+}
