@@ -1,6 +1,7 @@
 import Actuality from "../components/actuality/Actuality";
 import Career from "../components/career/Career";
-import Header from "../components/header/Header";
+import Header from "../components/header/header";
+import Portfolio from "../components/portfolio/portfolio";
 
 export default function Home(){
     return (
@@ -8,6 +9,7 @@ export default function Home(){
             <Header />
             <Actuality />
             <Career />
+            <Portfolio />
         </>
     )
 }
