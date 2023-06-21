@@ -18,7 +18,7 @@ export default function Cards() {
                         alt="product image"
                     />
                 </Carousel>
-                <div className="flex flex-col w-full p-2 mt-3">
+                <div className="flex flex-col w-full p-5 mt-3">
                     
                     <div className="flex justify-between items-start">
                         <h2 className="bg-clip-text text-transparent bg-gradient-to-r from-[#ff00aa] to-[#0000ff]">Viva Technology</h2>
