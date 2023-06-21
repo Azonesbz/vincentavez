@@ -5,7 +5,7 @@
 
 
 h1 {
-    font-family: gigalypse, Geneva, Tahoma, sans-serif;
+    font-family: "smoothy", Geneva, Tahoma, sans-serif;
     font-size: 46px;
     font-weight: 300;
 }
@@ -19,4 +19,7 @@ a, p, i, Link {
     font-family: "elza", Geneva, Tahoma, sans-serif;
     font-weight: 200;
     font-size: 18px;
+}
+* {
+    font-family: "elza", sans-serif;
 }
