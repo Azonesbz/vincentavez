@@ -27,7 +27,7 @@ export default function Header() {
             </nav>
             <img className='absolute z-0 rotate-180 blur-2xl' src="/blurblue.png" alt="blur image" />
 
-            <div className='container items-center justify-center grid grid-cols-6 min-h-screen relative text-center mt-[100px] inset-0'>
+            <div className='container items-center justify-center grid grid-cols-6 min-h-screen relative text-center sm:mt-0 mt-[100px] inset-0'>
                 <h1 className='col-span-6 sm:col-span-3'><span className='gradient-text'>Vincent </span>vous souhaite la bienvenue !</h1>
                 <div className='relative col-span-6 sm:col-span-3 flex-col items-center justify-center p-10'>
                     <img className='m-auto image' src="/me.jpg" alt="" width={250} />
