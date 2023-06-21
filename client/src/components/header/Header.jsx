@@ -14,7 +14,7 @@ export default function Header() {
     return (
         <header className='min-h-screen flex-col items-center justify-center'>
             <nav className={`flex items-center p-1 justify-between shadow fixed top-0 z-10 w-full bg-white duration-200 h-[60px] ${navbar ? "visible": "sm:opacity-0"}`} onMouseEnter={() => setNavbar(true)} onMouseMove={() => setNavbar(true)} onMouseLeave={() => setNavbar(false)}>
-                <Link to="." onClick={(e) => scrollTo(0, 0)}><img src="./VincentAvez.png" alt="logo du site" height={120} /></Link> 
+                <Link to="." onClick={(e) => scrollTo(0, 0)}><img src="./VincentAvez.png" alt="logo du site" width={150} /></Link> 
                 <ul className='space-x-10 mr-10 hidden sm:flex'>
                     <li className='item-link'><Link to={"#actuality"} onClick={() => actualityRef.current.scrollIntoView()}>Actualité</Link></li>
                     <li className='item-link'><Link to={"#parcours"} onClick={() => parcoursRef.current.scrollIntoView()}>Parcours</Link></li>
