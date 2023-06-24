@@ -1,5 +1,4 @@
 import Carousel from "../carousel/Carousel";
-import { Link } from "react-router-dom";
 
 export default function Cards() {
     return (
@@ -8,12 +7,12 @@ export default function Cards() {
                 <Carousel>
                     <img
                         className="min-w-full object-cover object-center"
-                        src="/roadmytripWhite.png"
+                        src="/roadmytripWhite.webp"
                         alt="product image"
                     />
                     <img
                         className="min-w-full object-cover object-center"
-                        src="/roadmytripBlack.png"
+                        src="/roadmytripBlack.webp"
                         alt="product image"
                     />
                 </Carousel>
@@ -41,22 +40,27 @@ export default function Cards() {
                 <Carousel>
                     <img
                         className="min-w-full object-contain object-center"
-                        src="/spacezoneWelcome.png"
+                        src="/spacezoneWelcome.webp"
                         alt="product image"
                     />
                     <img
                         className="min-w-full object-contain object-center"
-                        src="/spacezoneHeader.png"
+                        src="/spacezoneHeader.webp"
                         alt="product image"
                     />
                     <img
                         className="min-w-full object-contain object-center"
-                        src="/spacezoneProduct.png"
+                        src="/spacezoneProduct.webp"
                         alt="product image"
                     />
                     <img
                         className="min-w-full object-contain object-center"
-                        src="/spacezoneprofil.png"
+                        src="/spacezoneprofil.webp"
+                        alt="product image"
+                    />
+                    <img
+                        className="min-w-full object-contain object-center"
+                        src="/spacezoneFilter.webp"
                         alt="product image"
                     />
                 </Carousel>

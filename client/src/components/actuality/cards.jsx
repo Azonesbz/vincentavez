@@ -9,12 +9,12 @@ export default function Cards() {
                 <Carousel>
                     <img
                         className="min-w-full object-cover object-center"
-                        src="/viva2.jpg"
+                        src="/viva2.webp"
                         alt="product image"
                     />
                     <img
                         className="min-w-full object-cover object-center"
-                        src="/viva1.jpg"
+                        src="/viva1.webp"
                         alt="product image"
                     />
                 </Carousel>
