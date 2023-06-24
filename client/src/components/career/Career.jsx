@@ -37,21 +37,21 @@ export default function Career() {
                 <h1 className="font-light relative z-0">Le parcours de Vincent</h1>
                 <img className='absolute inset-0 z-1 blur-xl' src="/blurblue.png" alt="blur image" />
                 <img className='absolute top-72 right-96 z-1 rotate-180 blur-2xl' src="/blurblue.png" alt="blur image" />
-                <div className="bg-stone-200 w-[90%] sm:w-[60%] mt-10 p-5 rounded-r-xl shadow mr-auto relative z-2">
+                <div className="bg-stone-200 w-[90%] sm:w-[60%] mt-10 p-5 rounded-r-xl shadow-xl mr-auto relative z-2">
                     <h2>Je m'appelle Vincent, et j'ai 19 ans.</h2>
                     <div className="flex flex-col space-y-5">
                         <p className="mt-5">Je suis passionné par tout ce qui s'apprend ! Le métier de développeur est fascinant, à partir de rien, vous pouvez construire le projet de vos rêves, et c'est exactement pour cela que nous en sommes ici aujourd'hui avec <Link className="text-indigo-800" to="https://sycatle.dev">Sycatle.dev</Link></p>
                         <p className="mt-5"></p>
                     </div>
                 </div>
-                <div className="bg-stone-200 w-[90%] sm:w-[60%] mt-10 p-5 rounded-l-xl shadow ml-auto relative z-2">
+                <div className="bg-stone-200 w-[90%] sm:w-[60%] mt-10 p-5 rounded-l-xl shadow-xl ml-auto relative z-2">
                     <h2>D'où je viens ?</h2>
                     <div className="flex flex-col space-y-5">
                         <p className="mt-5">Né à Saint-Mandé, dans le Val-de-Marne, je suis quelqu'un de très logique et créatif. Depuis tout petit j'aime trouver la solution aux problèmes que je rencontre, j'aime aussi dessiner et construire des choses !</p>
                         <p className="mt-5"></p>
                     </div>
                 </div>
-                <div className="bg-stone-200 w-[90%] sm:w-[60%] mt-10 p-5 rounded-r-xl shadow mr-auto relative z-2">
+                <div className="bg-stone-200 w-[90%] sm:w-[60%] mt-10 p-5 rounded-r-xl shadow-xl mr-auto relative z-2">
                     <h2>Maintenant</h2>
                     <div className="flex flex-col space-y-5">
                         <p className="mt-5">Je suis à la recherche de "The entreprise !" pour septembre prochain. J'ai pour ambition d'apprendre les langages <Link className="text-indigo-800" to="https://www.typescriptlang.org/" target="_blank">TypeScript</Link>,  <Link className="text-indigo-800" to="https://www.typescriptlang.org/" target="_blank">NextJS</Link>,  <Link className="text-indigo-800" to="https://www.typescriptlang.org/" target="_blank">Prisma</Link>,  <Link className="text-indigo-800" to="https://www.typescriptlang.org/" target="_blank">GraphQL</Link>. </p>
@@ -59,7 +59,7 @@ export default function Career() {
                         <p className="mt-5">Je suis ouvert à toute proposition, veuillez me contacter sur mon adresse mail. <Link to="#contact" className="text-indigo-800">Ici</Link></p>
                     </div>
                 </div>
-                <div className="bg-stone-200 w-[90%] sm:w-[60%] mt-10 p-5 rounded-l-xl shadow ml-auto relative z-2 flex flex-col space-y-5">
+                <div className="bg-stone-200 w-[90%] sm:w-[60%] mt-10 p-5 rounded-l-xl shadow-xl ml-auto relative z-2 flex flex-col space-y-5">
                     <h2>Compétences</h2>
                     <div className="relative" onClick={() => htmlCompetence ? setHtmlCompetence(false) : setHtmlCompetence(true)}>
                         <div className='flex mr-5 space-x-2 items-center'>
@@ -74,7 +74,7 @@ export default function Career() {
                                 className="transition-height duration-500 ease-out"
                             >
                                 <p>
-                                    Comme tout le monde, j'ai commencé par apprendre le langage HTML. Un langage de balises permettant de construire le squelette de votre application.
+                                    Comme tout le monde, j'ai commencé par apprendre le langage HTML. Un <strong className="text-indigo-800">langage de balises</strong> permettant de construire le squelette de votre application.
                                 </p>
                             </div>
                         </div>
@@ -89,10 +89,14 @@ export default function Career() {
                         <div className="border-l-[1px] border-stone-400 pl-2 ml-3 overflow-hidden">
                             <div
                                 ref={contentCssRef}
-                                className="transition-height duration-500 ease-out"
+                                className="flex flex-col space-y-2 transition-height duration-500 ease-out"
                             >
                                 <p>
-                                    Comme tout le monde, j'ai commencé par apprendre le langage HTML. Un langage de balises permettant de construire le squelette de votre application.
+                                   Je suis pas un adepte du CSS, mais je me débrouille !
+                                </p>
+                                <p>
+                                   J'aime beaucoup la librairie de <Link to={`https://tailwindcss.com`} target="_blank" className="text-indigo-800">TailwindCSS</Link>, à ne pas confondre avec Bootstrap !
+                                   Elle est <strong className="text-indigo-800">très utile</strong> pour un développeur qui souhaite ne pas passer des heures à faire un site esthétique mais sans que ça devienne une contrainte de design. 
                                 </p>
                             </div>
                         </div>
@@ -110,7 +114,10 @@ export default function Career() {
                                 className="transition-height duration-500 ease-out"
                             >
                                 <p>
-                                    Comme tout le monde, j'ai commencé par apprendre le langage HTML. Un langage de balises permettant de construire le squelette de votre application.
+                                    Ahhhh le javascript !
+                                </p>
+                                <p>
+                                    Que dire de ce language ! <span className="text-indigo-800">Parfait pour un débutant</span>, le seul défaut, le typage.. Mais un problème à toujours une solution, <span className="text-indigo-800">Typescript</span>  est la solution.
                                 </p>
                             </div>
                         </div>
@@ -125,10 +132,15 @@ export default function Career() {
                         <div className="border-l-[1px] border-stone-400 pl-2 ml-3 overflow-hidden">
                             <div
                                 ref={contentReactRef}
-                                className="transition-height duration-500 ease-out"
+                                className="transition-height duration-500 ease-out flex flex-col space-y-2"
                             >
                                 <p>
-                                    Comme tout le monde, j'ai commencé par apprendre le langage HTML. Un langage de balises permettant de construire le squelette de votre application.
+                                    React est un <span className="text-indigo-800">très bon langage</span> ! Au début je travaillais avec EJS(un moteur de template de NodeJS),
+                                    puis <span className="text-indigo-800">je suis passé sur React</span>, et <span className="text-indigo-800">depuis je vois en couleur</span>! 
+                                </p>
+                                <p>
+                                    Une fois que les bases sont assimilé, c'est un jeu d'enfant !
+                                    Il faut bien sur compter sur un <span className="text-indigo-800">travail régulier pour progresser</span> plus spécifiquement mais c'est comme tout.
                                 </p>
                             </div>
                         </div>
@@ -146,7 +158,7 @@ export default function Career() {
                                 className="transition-height duration-500 ease-out"
                             >
                                 <p>
-                                    Comme tout le monde, j'ai commencé par apprendre le langage HTML. Un langage de balises permettant de construire le squelette de votre application.
+                                    Nous arrivons au langage de programmation orienté serveur, nous sommes toujours sur du javascript par contre ! 
                                 </p>
                             </div>
                         </div>
