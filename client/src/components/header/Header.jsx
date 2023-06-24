@@ -1,39 +1,69 @@
 import './header.css';
-import React, { useContext } from 'react';
-import { useState } from 'react';
+import React from 'react';
 import { useRef } from 'react';
 import { Link } from "react-router-dom";
+import { Dropdown } from 'flowbite-react';
+import { HiOutlineGlobeAlt } from 'react-icons/hi2';
 
 export default function Header() {
     const actualityRef = useRef(null);
     const parcoursRef = useRef(null);
     const portfolioRef = useRef(null);
 
-    const [navbar, setNavbar] = useState(true);
-
     return (
-        <header className='min-h-screen flex-col items-center justify-center'>
-            <nav className={`flex items-center p-1 justify-between shadow fixed top-0 z-10 w-full bg-white duration-200 h-[60px] ${navbar ? "visible": "sm:opacity-0"}`} onMouseEnter={() => setNavbar(true)} onMouseMove={() => setNavbar(true)} onMouseLeave={() => setNavbar(false)}>
-                <Link to="." onClick={(e) => scrollTo(0, 0)}><img src="./VincentAvez.png" alt="logo du site" width={150} /></Link> 
+        <header className='min-h-screen max-h-screen flex flex-col items-center justify-center overflow-x-hidden'>
+            <nav className={`flex items-center p-1 justify-between shadow fixed top-0 z-10 w-full bg-white duration-200 h-[60px]`}>
+                <Link to="." onClick={() => scrollTo(0, 0)}><img src="./VincentAvez.png" alt="logo du site" width={100} /></Link>
                 <ul className='space-x-10 mr-10 hidden sm:flex'>
-                    <li className='item-link'><Link to={"#actuality"} onClick={() => actualityRef.current.scrollIntoView()}>Actualité</Link></li>
-                    <li className='item-link'><Link to={"#parcours"} onClick={() => parcoursRef.current.scrollIntoView()}>Parcours</Link></li>
-                    <li className='item-link'><Link to={"#portfolio"} onClick={() => portfolioRef.current.scrollIntoView()}>Portfolio</Link></li>
+                    <li className='item-link'><a href={"#actuality"}>Actualité</a></li>
+                    <li className='item-link'><a href={"#parcours"}>Parcours</a></li>
+                    <li className='item-link'><a href={"#portfolio"}>Portfolio</a></li>
                 </ul>
-                <div className="absolute left-48 bottom-0 flex -mb-px h-[2px] w-56">
+                <div className="absolute left-28 bottom-0 flex -mb-px h-[2px] w-56">
                     <div className="w-full flex-none blur-sm [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]" />
                     <div className="-ml-[100%] w-full flex-none blur-[1px] [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]" />
                 </div>
-            </nav>
-            <img className='absolute z-0 rotate-180 blur-2xl' src="/blurblue.png" alt="blur image" />
-
-            <div className='container items-center justify-center grid grid-cols-6 min-h-screen relative text-center sm:mt-0 mt-[100px] inset-0'>
-                <h1 className='col-span-6 sm:col-span-3'><span className='gradient-text'>Vincent </span>vous souhaite la bienvenue !</h1>
-                <div className='relative col-span-6 sm:col-span-3 flex-col items-center justify-center p-10'>
-                    <img className='m-auto image' src="/me.jpg" alt="" width={250} />
-                    <h2 className='text-center mt-5'>Développeur d'applications web et web mobile</h2>
+                <div className="dropdown sm:hidden">
+                    <div className='flex mr-5 space-x-2 items-center'>
+                        <svg width="25" height="25" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                        <button className="dropbtn ">Menu</button>
+                    </div>
+                    <div className="dropdown-content">
+                        <a href="#actuality">Actualité</a>
+                        <a href="#parcours">Parcours</a>
+                        <a href="#portfolio">Portfolio</a>
+                    </div>
                 </div>
+            </nav>
+
+            <h1 className='text-center'>Vincent vous souhaite la bienvenue !</h1>
+            <div className='relative flex flex-col-reverse items-center justify-center '>
+                <img className='m-auto image mt-10' src="/me.jpg" alt="" width={250} />
+                <h1 className='font-thin text-2xl text-center gradient-text'>Développeur d'applications web et web mobile</h1>
             </div>
+            <Link
+                className='animate-one absolute bottom-5 border-2 border-black rounded-full duration-1000'
+                to={"#actuality"}
+                onClick={(e) => actualityRef.current.scrollIntoView()}
+            >
+                <svg
+                    width="40"
+                    height="40"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.7"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path d="M12 5v14"></path>
+                    <path d="m19 12-7 7-7-7"></path>
+                </svg>
+            </Link>
+
 
         </header>
     )
