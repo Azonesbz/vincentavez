@@ -7,16 +7,16 @@ export default function Header() {
 
     return (
         <header className='min-h-screen max-h-screen flex flex-col items-center justify-center overflow-x-hidden'>
-            <nav className={`flex items-center p-1 justify-between shadow fixed top-0 z-10 w-full bg-white duration-200 h-[60px]`}>
+            <nav className={`flex items-center justify-between sm:justify-normal p-1 shadow fixed top-0 z-10 w-full bg-white duration-200 h-[60px]`}>
                 <a href='.'><img src="./VincentAvez.webp" alt="logo du site" width={100} /></a>
-                <ul className='space-x-10 mr-10 hidden sm:flex'>
+                <ul className='space-x-10 mr-10 hidden sm:flex items-center border-l-[1px] border-stone-400 pl-5 ml-5 h-full '>
                     <li className='item-link'><a href={"#actuality"}>Actualité</a></li>
                     <li className='item-link'><a href={"#parcours"}>Parcours</a></li>
                     <li className='item-link'><a href={"#portfolio"}>Portfolio</a></li>
                 </ul>
-                <div className="absolute left-28 bottom-0 flex -mb-px h-[2px] w-56">
-                    <div className="w-full flex-none blur-sm [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]" />
-                    <div className="-ml-[100%] w-full flex-none blur-[1px] [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]" />
+                <div className="absolute left-[20%] bottom-0 flex -mb-px h-[2px] w-56">
+                    <div className="w-full flex-none [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]" />
+                    <div className="-ml-[100%] w-full flex-none [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]" />
                 </div>
                 <div className="dropdown sm:hidden">
                     <div className='flex mr-5 space-x-2 items-center'>
