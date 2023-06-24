@@ -28,7 +28,7 @@ export default function Cards() {
                         <p>J'ai été invité à la Viva Tech ! </p>
                         <p>En effet, pôle emploi m'a invité pour que je puisse représenter la <Link className="text-indigo-800" to="https://3wa.fr">3WAcademy</Link>.</p>
                         <p>J'ai réaliser une interview et j'ai également présenter mon parcours ce qui m'a permis de renforcer ma confiance à l'oral, parce que c'était pas gagné !</p>
-                        <p>Je vous invites grandement si l'occasion se présente pour vous, de participer à un évènement de ce style.</p>
+                        <p>Je vous invites grandement si l'occasion se présente à vous, de participer à un évènement de ce style.</p>
                     </div>
                     
                 </div>
