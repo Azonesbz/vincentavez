@@ -3,7 +3,7 @@ import Carousel from "../carousel/Carousel";
 export default function Cards() {
     return (
         <>
-            <div className="mt-10 flex flex-col sm:flex-row">
+            <div className="mt-10 flex flex-col md:flex-row">
                 <Carousel>
                     <img
                         className="min-w-full object-cover object-center"
@@ -16,7 +16,7 @@ export default function Cards() {
                         alt="product image"
                     />
                 </Carousel>
-                <div className="flex flex-col w-full p-2 mt-3 sm:mt-0 sm:pt-0">
+                <div className="flex flex-col w-full p-2 mt-3 md:mt-0 md:p-5 bg-neutral-100 shadow-xl">
 
                     <div className="flex justify-between items-start">
                         <h2 className="bg-clip-text text-transparent bg-gradient-to-r from-[#ff00aa] to-[#0000ff]">RoadMyTrip</h2>
@@ -36,7 +36,7 @@ export default function Cards() {
                     </div>
                 </div>
             </div>
-            <div className="mt-10 flex flex-col sm:flex-row">
+            <div className="mt-10 flex flex-col md:flex-row">
                 <Carousel>
                     <img
                         className="min-w-full object-contain object-center"
@@ -64,7 +64,7 @@ export default function Cards() {
                         alt="product image"
                     />
                 </Carousel>
-                <div className="flex flex-col w-full p-2 mt-3 sm:mt-0 sm:pt-0">
+                <div className="flex flex-col w-full p-2 mt-3 md:mt-0 bg-neutral-100 md:p-5 shadow-xl">
                     <div className="flex justify-between items-start">
                         <h2 className="bg-clip-text text-transparent bg-gradient-to-r from-[#ff00aa] to-[#0000ff]">SpaceZone</h2>
                         <i className="text-sm">06/03/2023</i>
