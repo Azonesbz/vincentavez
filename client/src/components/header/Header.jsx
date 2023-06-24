@@ -2,18 +2,13 @@ import './header.css';
 import React from 'react';
 import { useRef } from 'react';
 import { Link } from "react-router-dom";
-import { Dropdown } from 'flowbite-react';
-import { HiOutlineGlobeAlt } from 'react-icons/hi2';
 
 export default function Header() {
-    const actualityRef = useRef(null);
-    const parcoursRef = useRef(null);
-    const portfolioRef = useRef(null);
 
     return (
         <header className='min-h-screen max-h-screen flex flex-col items-center justify-center overflow-x-hidden'>
             <nav className={`flex items-center p-1 justify-between shadow fixed top-0 z-10 w-full bg-white duration-200 h-[60px]`}>
-                <Link to="." onClick={() => scrollTo(0, 0)}><img src="./VincentAvez.png" alt="logo du site" width={100} /></Link>
+                <a href='.'><img src="./VincentAvez.webp" alt="logo du site" width={100} /></a>
                 <ul className='space-x-10 mr-10 hidden sm:flex'>
                     <li className='item-link'><a href={"#actuality"}>Actualité</a></li>
                     <li className='item-link'><a href={"#parcours"}>Parcours</a></li>
@@ -43,10 +38,9 @@ export default function Header() {
                 <img className='m-auto image mt-10' src="/me.webp" alt="" width={250} />
                 <h1 className='font-thin text-2xl text-center gradient-text'>Développeur d'applications web et web mobile</h1>
             </div>
-            <Link
-                className='animate-one absolute bottom-5 border-2 border-black rounded-full duration-1000'
-                to={"#actuality"}
-                onClick={(e) => actualityRef.current.scrollIntoView()}
+            <a
+                className='animate-one absolute bottom-5 border-[3px] border-black rounded-full duration-1000'
+                href={"#actuality"}
             >
                 <svg
                     width="40"
@@ -62,7 +56,7 @@ export default function Header() {
                     <path d="M12 5v14"></path>
                     <path d="m19 12-7 7-7-7"></path>
                 </svg>
-            </Link>
+            </a>
 
 
         </header>
