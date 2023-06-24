@@ -6,20 +6,40 @@
 
 h1 {
     font-family: "smoothy", Geneva, Tahoma, sans-serif;
-    font-size: 46px;
+    font-size: 35px;
     font-weight: 300;
 }
 h2 {
-    font-size: 30px;
+    font-size: 26px;
 }
 h3 {
-    font-size: 22px;
+    font-size: 20px;
 }
 a, p, i, Link {
     font-family: "elza", Geneva, Tahoma, sans-serif;
     font-weight: 200;
-    font-size: 18px;
+    font-size: 16px;
 }
 * {
     font-family: "elza", sans-serif;
 }
+
+@media (min-width: 768px) {
+    /* Styles à appliquer lorsque la largeur de l'écran est supérieure ou égale à 768px */
+    h1 {
+        font-family: "smoothy", Geneva, Tahoma, sans-serif;
+        font-size: 46px;
+        font-weight: 300;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 22px;
+    }
+    a, p, i, Link {
+        font-family: "elza", Geneva, Tahoma, sans-serif;
+        font-weight: 200;
+        font-size: 18px;
+    }
+  }
