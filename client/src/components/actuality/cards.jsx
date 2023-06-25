@@ -2,10 +2,9 @@ import Carousel from "../carousel/Carousel";
 import { Link } from "react-router-dom";
 
 export default function Cards() {
-    const VivaTech = []
     return (
         <>
-            <div className="mt-10 flex flex-col sm:flex-row bg-neutral-100 shadow">
+            <div className="mt-10 flex flex-col sm:flex-row bg-neutral-100 shadow-xl">
                 <Carousel>
                     <img
                         className="min-w-full object-cover object-center"
