@@ -1,7 +1,5 @@
 import './header.css';
 import React from 'react';
-import { useRef } from 'react';
-import { Link } from "react-router-dom";
 
 export default function Header() {
 
@@ -10,7 +8,7 @@ export default function Header() {
             <div className='h-[60px] w-full bg-white fixed top-0 z-40 opacity-75 backdrop-blur-sm'/>
             <nav className={`container shadow fixed top-0 max-w-full z-50 flex items-center w-full h-[60px] backdrop-blur-md`}>
                 <a className='ml-5' href='.'><img src="./logo.webp" alt="logo du site" width={50} /></a>
-                <ul className='space-x-10 mr-10 hidden sm:flex items-center ml-5 h-full '>
+                <ul className='space-x-10 mr-10 hidden sm:flex items-center ml-10 h-full '>
                     <li className='item-link'><a href={"#actuality"}>Actualité</a></li>
                     <li className='item-link'><a href={"#parcours"}>Parcours</a></li>
                     <li className='item-link'><a href={"#portfolio"}>Portfolio</a></li>

@@ -18,7 +18,8 @@
 }
 
 .item-link::after {
-  background: linear-gradient(90deg, #38BDF8 0%, #0EA5E9 33%, rgba(236, 72, 153, 0.3) 67%, #EC4899 100%);  display: block;
+  background-color: #000;  
+  display: block;
   position: absolute;
   bottom: 2px;
   width: 0;
