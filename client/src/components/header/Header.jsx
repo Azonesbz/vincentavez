@@ -6,10 +6,11 @@ import { Link } from "react-router-dom";
 export default function Header() {
 
     return (
-        <header className='min-h-screen max-h-screen flex flex-col items-center justify-center overflow-x-hidden'>
-            <nav className={`flex items-center justify-between sm:justify-normal p-1 shadow fixed top-0 z-10 w-full bg-white duration-200 h-[60px]`}>
-                <a href='.'><img src="./VincentAvez.webp" alt="logo du site" width={100} /></a>
-                <ul className='space-x-10 mr-10 hidden sm:flex items-center border-l-[1px] border-stone-400 pl-5 ml-5 h-full '>
+        <header className='min-h-screen max-h-screen w-full  flex flex-col items-center justify-center overflow-x-hidden'>
+            <div className='h-[60px] w-full bg-white fixed top-0 z-40 opacity-75 backdrop-blur-sm'/>
+            <nav className={`container shadow fixed top-0 max-w-full z-50 flex items-center w-full h-[60px] backdrop-blur-md`}>
+                <a className='ml-5' href='.'><img src="./logo.webp" alt="logo du site" width={50} /></a>
+                <ul className='space-x-10 mr-10 hidden sm:flex items-center ml-5 h-full '>
                     <li className='item-link'><a href={"#actuality"}>Actualité</a></li>
                     <li className='item-link'><a href={"#parcours"}>Parcours</a></li>
                     <li className='item-link'><a href={"#portfolio"}>Portfolio</a></li>
