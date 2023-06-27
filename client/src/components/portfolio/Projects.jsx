@@ -3,7 +3,8 @@ import { Link } from "react-router-dom"
 
 const embla_OPTIONS = {
     loop: true,
-    align: 'center'
+    align: 'center',
+    
 }
 
 export default function Project() {
