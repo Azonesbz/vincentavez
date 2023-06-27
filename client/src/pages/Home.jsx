@@ -9,23 +9,10 @@ export default function Home() {
     return (
         <>
             <Header />
-
-            <LazyLoad height={200}>
-                <Actuality />
-            </LazyLoad>
-
-            <LazyLoad height={200}>
-                <Career />
-            </LazyLoad>
-
-            <LazyLoad height={200}>
-                <Portfolio />
-            </LazyLoad>
-            <LazyLoad height={200}>
-                <Contact />
-            </LazyLoad>
-
-
+            <Actuality />
+            <Career />
+            <Portfolio />
+            <Contact />
         </>
     )
 }
