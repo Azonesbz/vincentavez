@@ -103,7 +103,7 @@ export default function Project() {
                         <i className="text-sm">06/03/2023</i>
                     </div>
                     <div className="flex flex-col space-y-2 mt-5">
-                        <p>Je vous présente SpaceZone, un projet d'e-commerce 2.0 que j'ai dû effectuer pour mon école, il m'aura permis d'obtenir mon diplôme !</p>
+                        <p>Je vous présente SpaceZone, un projet d'e-commerce que j'ai dû effectuer pour mon école, il m'aura permis d'obtenir mon diplôme !</p>
                         <p>J'ai appris les fondamentaux de React, et j'ai aussi appris à utiliser Redux. C'était une vrai galère !</p>
                         <p>Système de panier, système de paiement avec stripe, CRUD au complet côté administrateur et utilisateur, carousel fait maison, filtre de recherche, menu intéractif, réusabilité des composants, création de modal. Et encore plein de choses dont je suis très fier d'avoir réalisé.</p>
                     </div>
