@@ -34,7 +34,7 @@ export default function Header() {
 
             <h1 className='text-center'>Vincent vous souhaite la bienvenue !</h1>
             <div className='relative flex flex-col-reverse items-center justify-center '>
-                <img className='m-auto image mt-10' src="/me.webp" alt="" width={250} />
+                <img className='image mt-10' src="/me.webp" alt="picture of Vincent" width={200}/>
                 <h1 className='font-thin text-2xl text-center gradient-text'>Développeur d'applications web et web mobile</h1>
             </div>
             <a
