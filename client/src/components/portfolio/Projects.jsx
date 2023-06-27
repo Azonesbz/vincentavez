@@ -12,7 +12,7 @@ export default function Project() {
     const [roadRef] = useEmblaCarousel(embla_OPTIONS)
     return (
         <>
-            <div className="mt-10 flex flex-col col-span-12 md:col-span-6">
+            <div className="mt-10 flex flex-col col-span-12 md:col-span-6" id='roadmytrip'>
                 <div className="embla" ref={roadRef}>
                     <div className="embla__container">
                         <div className="embla__slide">
@@ -55,7 +55,7 @@ export default function Project() {
                     </div>
                 </div>
             </div>
-            <div className="mt-10 flex flex-col col-span-12 md:col-span-6">
+            <div className="mt-10 flex flex-col col-span-12 md:col-span-6" id='spacezone'>
                 <div className="embla" ref={emblaRef}>
                     <div className="embla__container">
                         <div className="embla__slide">
