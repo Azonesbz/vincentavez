@@ -1,4 +1,5 @@
 import useEmblaCarousel from 'embla-carousel-react'
+import LazyLoad from 'react-lazyload'
 import { Link } from "react-router-dom"
 
 const embla_OPTIONS = {
@@ -15,10 +16,14 @@ export default function Project() {
                 <div className="embla" ref={roadRef}>
                     <div className="embla__container">
                         <div className="embla__slide">
-                            <img src="./roadmytrip.webp" alt="" />
+                            <LazyLoad once height={50}>
+                                <img src="./roadmytrip.webp" alt="image du site web 'RoadMyTrip', home page" />
+                            </LazyLoad>
                         </div>
                         <div className="embla__slide">
-                            <img src="./register.webp" alt="" />
+                            <LazyLoad once height={50}>
+                                <img src="./register.webp" alt="image of website 'RoadMyTrip', register page" />
+                            </LazyLoad>
                         </div>
                     </div>
                 </div>
@@ -54,36 +59,44 @@ export default function Project() {
                 <div className="embla" ref={emblaRef}>
                     <div className="embla__container">
                         <div className="embla__slide">
-                            <img
-                                className="min-w-full object-contain object-center"
-                                src="/authentification.webp"
-                                alt="product image"
-                            />
+                            <LazyLoad once height={50}>
+                                <img
+                                    className="min-w-full object-contain object-center"
+                                    src="/authentification.webp"
+                                    alt="product image"
+                                />
+                            </LazyLoad>
                         </div>
                         <div className="embla__slide">
-                            <img
-                                className="min-w-full object-contain object-center"
-                                src="/homepage.webp"
-                                alt="product image"
-                            />
+                            <LazyLoad once height={50}>
+                                <img
+                                    className="min-w-full object-contain object-center"
+                                    src="/homepage.webp"
+                                    alt="product image"
+                                />
+                            </LazyLoad>
                         </div>
                         <div className="embla__slide">
-                            <img
-                                className="min-w-full object-contain object-center"
-                                src="/profil2.webp"
-                                alt="product image"
-                            />
+                            <LazyLoad once height={50}>
+                                <img
+                                    className="min-w-full object-contain object-center"
+                                    src="/profil2.webp"
+                                    alt="product image"
+                                />
+                            </LazyLoad>
                         </div>
                         <div className="embla__slide">
-                            <img
-                                className="min-w-full object-contain object-center"
-                                src="/cart.webp"
-                                alt="product image"
-                            />
+                            <LazyLoad once height={50}>
+                                <img
+                                    className="min-w-full object-contain object-center"
+                                    src="/cart.webp"
+                                    alt="product image"
+                                />
+                            </LazyLoad>
                         </div>
                     </div>
                 </div>
-               
+
                 <div className="flex flex-col p-2 mt-3 md:mt-0 bg-neutral-100 md:p-5 shadow-xl">
                     <div className="flex justify-between items-start">
                         <h2 className="">SpaceZone</h2>
