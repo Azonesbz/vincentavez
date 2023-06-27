@@ -94,7 +94,7 @@ export default function Career() {
                         <div className="flex flex-col space-y-5">
                             <p className="mt-5">Je suis à la recherche de "The entreprise !" pour septembre prochain. J'ai pour ambition d'apprendre les langages <Link className="text-indigo-800" to="https://www.typescriptlang.org/" target="_blank">TypeScript</Link>,  <Link className="text-indigo-800" to="https://www.typescriptlang.org/" target="_blank">NextJS</Link>,  <Link className="text-indigo-800" to="https://www.typescriptlang.org/" target="_blank">Prisma</Link>,  <Link className="text-indigo-800" to="https://www.typescriptlang.org/" target="_blank">GraphQL</Link>. </p>
                             <p className="mt-5">Avant toutes chose, j'ai besoin d'un projet stimulant, intéressant, et pour lequel je partage des valeurs similaires.</p>
-                            <p className="mt-5">Je suis ouvert à toute proposition, veuillez me contacter sur mon adresse mail. <Link to="#contact" className="text-indigo-800">Ici</Link></p>
+                            <p className="mt-5">Je suis ouvert à toute proposition, veuillez me contacter sur mon adresse mail. <a href="#contact" className="text-indigo-800">Ici</a></p>
                         </div>
                     </div>
                     <div className="bg-stone-200 w-[90%] sm:w-[60%] mt-10 p-5 rounded-l-xl shadow-xl ml-auto relative z-2 flex flex-col space-y-5">
