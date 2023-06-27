@@ -28,16 +28,15 @@ export default function Cooperation() {
                         <i className="text-sm">06/03/2023</i>
                     </div>
                     <div className="flex flex-col space-y-2 mt-5">
-                        <p>C'est toujours marrant de voir par quoi nous avons commencer. Voici mon premier site internet !</p>
-                        <p>Grâce à ce site, j'ai appris à manipuler des données provenant d'une API</p>
-
+                        <p>Ceci est un projet sur lequel j'ai travaillé pendant un mois lors de mon stage. Il appartient à <span className='text-indigo-800'>Sycatle.dev</span>.</p>
+                        <p>Nous avons travaillé en collaboration avec <span className='text-indigo-800'>Ali Missoum</span>, un collègue de formation, ainsi qu'avec Charlie, <span className='text-indigo-800'>fondateur de Whispee</span>.</p>
                     </div>
                     <div className="flex justify-between items-center ">
                         <div className="flex flex-wrap gap-5 py-5">
                             <span className="inline-block bg-[#95bbe6] font-bold py-1 px-2 rounded-full">React.js</span>
-                            <span className="inline-block bg-[#95bbe6] font-bold py-1 px-2 rounded-full">Redux</span>
-                            <span className="inline-block bg-[#95bbe6] font-bold py-1 px-2 rounded-full">TailwindCSS</span>
-                            <span className="inline-block bg-[#80e8b6] font-bold py-1 px-2 rounded-full">NodeJS</span>
+                            <span className="inline-block bg-[#95bbe6] font-bold py-1 px-2 rounded-full">WebSocket</span>
+                            <span className="inline-block bg-[#95bbe6] font-bold py-1 px-2 rounded-full">Jira</span>
+                            <span className="inline-block bg-[#80e8b6] font-bold py-1 px-2 rounded-full">MongoDB</span>
                         </div>
                         <Link to="https://github.com/sycatledev/WhispeeChat" target='_blank'>
                             <svg className="hover:scale-95 duration-200" width="30" height="30" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
