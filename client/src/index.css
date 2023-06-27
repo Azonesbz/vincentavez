@@ -12,11 +12,10 @@ h1 {
 h2 {
     font-size: 26px;
 }
-h3 {
+h3, label {
     font-size: 20px;
 }
-a, p, i, Link, label {
-    font-family: effra, Geneva, Tahoma, sans-serif;
+a, p, i, Link, input, textarea {
     font-weight: 300;
     font-size: 16px;
 }
@@ -34,10 +33,10 @@ a, p, i, Link, label {
     h2 {
         font-size: 30px;
     }
-    h3 {
+    h3, label {
         font-size: 22px;
     }
-    a, p, i, Link {
+    a, p, i, Link, input, textarea {
         font-family: effra, Tahoma, sans-serif;
         font-weight: 300;
         font-size: 18px;
