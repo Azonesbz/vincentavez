@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Header() {
     return (
-        <header className='min-h-screen max-h-screen w-full  flex flex-col items-center justify-center overflow-x-hidden'>
+        <header className='min-h-screen max-h-screen w-full flex flex-col items-center justify-center overflow-x-hidden'>
             <div className='h-[60px] w-full bg-white fixed top-0 z-40 opacity-75 backdrop-blur-sm' />
             <nav className={`container shadow fixed top-0 max-w-full z-50 flex items-center justify-between sm:justify-normal w-full h-[60px] backdrop-blur-md`}>
                 <a className='ml-5' href='#'><img src="./logo.webp" alt="logo du site" width={50} /></a>
@@ -32,29 +32,19 @@ export default function Header() {
                     </div>
                 </div>
             </nav>
-
-            <h1 className='text-center'>Vincent vous souhaite la bienvenue !</h1>
-            <div className='relative flex flex-col-reverse items-center justify-center '>
-                <img className='image mt-10' src="/me.webp" alt="picture of Vincent" width={200} />
-                <h1 className='font-thin text-2xl text-center gradient-text'>Développeur d'applications web et web mobile</h1>
+            <div>
+                <h1 className='text-center'>Vincent vous souhaite la bienvenue !</h1>
+                <div className='relative flex flex-col-reverse items-center justify-center '>
+                    <img className='image mt-10' src="/me.webp" alt="picture of Vincent" width={200} />
+                    <h1 className='font-thin text-2xl text-center gradient-text'>Développeur d'applications web et web mobile</h1>
+                </div>
             </div>
             <a
-                className='animate-one absolute bottom-5 border-[3px] border-black rounded-full duration-1000'
+                className='animate-one absolute bottom-5 rounded-full duration-1000'
                 href={"#actuality"}
             >
-                <svg
-                    width="40"
-                    height="40"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="1.7"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path d="M12 5v14"></path>
-                    <path d="m19 12-7 7-7-7"></path>
+                <svg className='animate-bounce' width="40" height="40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m6 9 6 6 6-6"></path>
                 </svg>
             </a>
 
