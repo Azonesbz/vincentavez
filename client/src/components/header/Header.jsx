@@ -1,10 +1,13 @@
 import './Header.css';
 import React from 'react';
 
+
 export default function Header() {
+
     return (
-        <header className='min-h-screen max-h-screen w-full flex flex-col items-center justify-center overflow-x-hidden'>
+        <header className='min-h-screen max-h-screen w-full flex items-center overflow-x-hidden p-10 justify-around'>
             <div className='h-[60px] w-full bg-white fixed top-0 z-40 opacity-75 backdrop-blur-sm' />
+
             <nav className={`container shadow fixed top-0 max-w-full z-50 flex items-center justify-between sm:justify-normal w-full h-[60px] backdrop-blur-md`}>
                 <a className='ml-5' href='#'><img src="./logo.webp" alt="logo du site" width={50} /></a>
                 <ul className='space-x-10 mr-10 hidden sm:flex items-center ml-10 h-full '>
@@ -32,15 +35,17 @@ export default function Header() {
                     </div>
                 </div>
             </nav>
-            <div>
+
+            <div className='lg:w-1/2'>
                 <h1 className='text-center'>Vincent vous souhaite la bienvenue !</h1>
                 <div className='relative flex flex-col-reverse items-center justify-center '>
-                    <img className='image mt-10' src="/me.webp" alt="picture of Vincent" width={200} />
+                    <img className='image mt-10' src="/me.webp" alt="picture of Vincent" width={250} />
                     <h1 className='font-thin text-2xl text-center gradient-text'>Développeur d'applications web et web mobile</h1>
                 </div>
             </div>
+
             <a
-                className='animate-one absolute bottom-5 rounded-full duration-1000'
+                className='animate-one absolute bottom-5 rounded-full duration-1000 left-[50%] translate-x-[-50%]'
                 href={"#actuality"}
             >
                 <svg className='animate-bounce' width="40" height="40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
