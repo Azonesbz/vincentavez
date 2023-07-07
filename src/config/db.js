@@ -1,2 +1,17 @@
-import mariadb from "mariadb"
-const pool = mariadb.createPool({host: process.env.DB_HOST, user: process.env.DB_USER, connectionLimit: 5});
+import mysql from "mysql2"
+import dotenv from 'dotenv'
+
+dotenv.config()
+
+console.log(process.env.USER_DB)
+const options =
+{
+    // host: process.env.HOST_DB,
+    // user: process.env.USER_DB,
+    // database: process.env.DATABASE_DB
+    host: 'localhost',
+    user: 'root',
+    database: 'vincentavez',
+    password: 'root'
+}
+export const connection = mysql.createConnection(options).promise();
