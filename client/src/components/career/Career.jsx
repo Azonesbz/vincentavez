@@ -43,10 +43,10 @@ export default function Career() {
     return (
         <>
             <section className="container min-h-screen mt-10 flex-grow w-full relative z-1 py-24" id="parcours">
-                <h1 className="font-light relative z-0">Le parcours de Vincent</h1>
+                <h2 className="relative z-0">Le parcours de Vincent</h2>
                 <div className="bg-stone-200 w-[90%] sm:w-[60%] mt-10 p-5 rounded-r-xl shadow-xl mr-auto relative z-2">
                     <div className="flex justify-between items-center">
-                        <h2>Je m'appelle Vincent, et j'ai 19 ans.</h2>
+                        <h3>Je m'appelle Vincent, et j'ai 19 ans.</h3>
 
                         <div className="info">
                             <div className='flex mr-5 space-x-2 items-center'>
@@ -112,7 +112,7 @@ export default function Career() {
                                 <svg className={`duration-500 ${htmlCompetence ? "" : "rotate-180"}`} width="25" height="25" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg>
-                                <h3 className="cursor-pointer">HTML</h3>
+                                <h4 className="cursor-pointer">HTML</h4>
                             </div>
                             <div className="border-l-[1px] border-stone-400 pl-2 ml-3 overflow-hidden">
                                 <div
@@ -130,7 +130,7 @@ export default function Career() {
                                 <svg className={`duration-500 ${cssCompetence ? "" : "rotate-180"}`} width="25" height="25" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg>
-                                <h3 className="cursor-pointer">CSS</h3>
+                                <h4 className="cursor-pointer">CSS</h4>
                             </div>
                             <div className="border-l-[1px] border-stone-400 pl-2 ml-3 overflow-hidden">
                                 <div
@@ -152,7 +152,7 @@ export default function Career() {
                                 <svg className={`duration-500 ${jsCompetence ? "" : "rotate-180"}`} width="25" height="25" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg>
-                                <h3 className="cursor-pointer">JavaScript</h3>
+                                <h4 className="cursor-pointer">JavaScript</h4>
                             </div>
                             <div className="border-l-[1px] border-stone-400 pl-2 ml-3 overflow-hidden">
                                 <div
@@ -173,7 +173,7 @@ export default function Career() {
                                 <svg className={`duration-500 ${reactCompetence ? "" : "rotate-180"}`} width="25" height="25" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg>
-                                <h3 className="cursor-pointer">React.js</h3>
+                                <h4 className="cursor-pointer">React.js</h4>
                             </div>
                             <div className="border-l-[1px] border-stone-400 pl-2 ml-3 overflow-hidden">
                                 <div
@@ -196,7 +196,7 @@ export default function Career() {
                                 <svg className={`duration-500 ${nodejsCompetence ? "" : "rotate-180"}`} width="25" height="25" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path d="m6 9 6 6 6-6"></path>
                                 </svg>
-                                <h3 className="cursor-pointer">NodeJS</h3>
+                                <h4 className="cursor-pointer">NodeJS</h4>
                             </div>
                             <div className="border-l-[1px] border-stone-400 pl-2 ml-3 overflow-hidden">
                                 <div
