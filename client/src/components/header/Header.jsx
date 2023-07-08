@@ -1,22 +1,36 @@
 import './Header.css';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 
 export default function Header() {
+    const [scrollPosition, setScrollPosition] = useState(0)
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    let handleScroll = () => {
+        const position = window.pageYOffset
+        setScrollPosition(position)
+    }
 
     return (
-        <header className='min-h-screen max-h-screen w-full flex items-center overflow-x-hidden sm:p-10 justify-around'>
-            <div className='h-[60px] w-full bg-white fixed top-0 z-40 opacity-75 backdrop-blur-sm' />
-
-            <nav className={`container shadow fixed top-0 max-w-full z-50 flex items-center justify-between sm:justify-normal w-full h-[60px] backdrop-blur-md`}>
-                <a className='ml-5' href='#'><img src="./logo.webp" alt="logo du site" width={50} /></a>
-                <ul className='space-x-10 mr-10 hidden sm:flex items-center ml-10 h-full '>
-                    <li className='item-link'><a href={"#actuality"}>Actualité</a></li>
+        <header className='container min-h-screen max-h-screen flex items-center w-full overflow-x-hidden sm:p-10 justify-around'>
+            <div className={`h-[60px] w-full bg-white fixed top-0 z-40 opacity-75 backdrop-blur-xl ${scrollPosition >= 15 ? "shadow" : "" }`} />
+            <div className={`h-[60px] w-full bg-white fixed top-0 z-40 opacity-50 backdrop-blur-sm mix-blend-color ${scrollPosition >= 15 ? "shadow" : "" }`} />
+            <nav className={` fixed top-0 z-50 flex items-center justify-between sm:justify-normal h-[60px]`}>
+                
+                <ul className='space-x-10 mr-10 hidden sm:flex items-center ml-10 h-full uppercase '>
+                    <li className='item-link'><a className='text-[1rem]' href={"#actuality"}>Actualité</a></li>
                     <li className='item-link'><a href={"#parcours"}>Parcours</a></li>
+                    <a className='ml-5' href='#'><img src="./logo.webp" alt="logo du site" width={50} /></a>
                     <li className='item-link'><a href={"#portfolio"}>Portfolio</a></li>
                     <li className='item-link'><a href={"#contact"}>Contact</a></li>
                 </ul>
-                <div className="absolute left-[20%] bottom-0 flex -mb-px h-[2px] w-56">
+                <div className="absolute right-[50%] translate-x-[50%] bottom-0 flex -mb-px h-[2px] w-56">
                     <div className="w-full flex-none [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]" />
                     <div className="-ml-[100%] w-full flex-none [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]" />
                 </div>
