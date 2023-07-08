@@ -25,7 +25,7 @@ export default function Actuality(){
     return (
         <>
             <section className="container py-24" id="actuality">
-                <h1 className="font-thin">Les actualités</h1>
+                <h2>Les actualités</h2>
                 <div className="grid grid-cols-12 gap-5">
                     {post ? post.map((el, index) => {
                         const newEmblaIndex = index+'Ref'
