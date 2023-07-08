@@ -40,7 +40,7 @@ h3, label {
 h4 {
   font-size: var(--fs4);
 }
-a, p, i, Link, input, textarea {
+p, i, span, input, textarea {
   font-family: effra, Tahoma, sans-serif;
     font-weight: 100;
     font-size: var(--fst);
