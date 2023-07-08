@@ -10,12 +10,12 @@ function Success({ isOpen }) {
             <FormModal isOpen={isOpen} width={'w-full'} height={'h-72'}>
                 <div className='h-full w-full flex flex-col items-center justify-center p-10'>
                     <div className='flex flex-col items-center'>
-                        <h1 className="text-2xl text-center text-gray-900 dark:text-white">
+                        <h2 className="text-2xl text-center text-gray-900 dark:text-white">
                             Votre message à été envoyé !
-                        </h1>
-                        <h1 className='text-center text-2xl'>
+                        </h2>
+                        <h3 className='text-center text-2xl'>
                             Vous recevrez une réponse dans un délai de une semaine.
-                        </h1>
+                        </h3>
                     </div>
                     <a href="."
                         className='bg-blue-700 text-xl rounded-full py-1 px-3 mt-2'
@@ -35,7 +35,7 @@ export default function Contact() {
         <>
             <section className='py-24 container' id='contact'>
 
-                <h1>Contact</h1>
+                <h2>Contact</h2>
                 <form className='flex flex-col gap-5' onSubmit={handleSubmit}>
                     <div className='flex flex-col'>
                         <label htmlFor="email">
