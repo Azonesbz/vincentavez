@@ -5,7 +5,7 @@ import React from 'react';
 export default function Header() {
 
     return (
-        <header className='min-h-screen max-h-screen w-full flex items-center overflow-x-hidden p-10 justify-around'>
+        <header className='min-h-screen max-h-screen w-full flex items-center overflow-x-hidden sm:p-10 justify-around'>
             <div className='h-[60px] w-full bg-white fixed top-0 z-40 opacity-75 backdrop-blur-sm' />
 
             <nav className={`container shadow fixed top-0 max-w-full z-50 flex items-center justify-between sm:justify-normal w-full h-[60px] backdrop-blur-md`}>
@@ -36,16 +36,25 @@ export default function Header() {
                 </div>
             </nav>
 
-            <div className='lg:w-1/2'>
+            <div>
                 <h1 className='text-center'>Vincent vous souhaite la bienvenue !</h1>
                 <div className='relative flex flex-col-reverse items-center justify-center '>
-                    <img className='image mt-10' src="/me.webp" alt="picture of Vincent" width={250} />
-                    <h1 className='font-thin text-2xl text-center gradient-text'>Développeur d'applications web et web mobile</h1>
+                    <img className='image mt-5 sm:mt-10 w-40 sm:w-48 md:w-56 lg:w-72' src="/me.webp" alt="picture of Vincent" />
+                    <div className='text-center '>
+                        <h2 class="title">Développeur web React/NodeJS
+                            <div class="aurora">
+                                <div class="aurora__item"></div>
+                                <div class="aurora__item"></div>
+                                <div class="aurora__item"></div>
+                                <div class="aurora__item"></div>
+                            </div>
+                        </h2>
+                    </div>
                 </div>
             </div>
 
             <a
-                className='animate-one absolute bottom-5 rounded-full duration-1000 left-[50%] translate-x-[-50%]'
+                className='animate-one absolute bottom-0 sm:bottom-5 rounded-full duration-1000 left-[50%] translate-x-[-50%]'
                 href={"#actuality"}
             >
                 <svg className='animate-bounce' width="40" height="40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
