@@ -30,7 +30,7 @@ export default function Project() {
                 <div className="flex flex-col p-2 mt-3 md:mt-0 md:p-5 bg-neutral-100 shadow-xl">
 
                     <div className="flex justify-between items-start">
-                        <h2 className="bg-clip-text">RoadMyTrip</h2>
+                        <h3>RoadMyTrip</h3>
                         <i className="text-sm">06/03/2023</i>
                     </div>
                     <div className="flex flex-col space-y-2 mt-5">
@@ -99,7 +99,7 @@ export default function Project() {
 
                 <div className="flex flex-col p-2 mt-3 md:mt-0 bg-neutral-100 md:p-5 shadow-xl">
                     <div className="flex justify-between items-start">
-                        <h2 className="">SpaceZone</h2>
+                        <h3>SpaceZone</h3>
                         <i className="text-sm">06/03/2023</i>
                     </div>
                     <div className="flex flex-col space-y-2 mt-5">
