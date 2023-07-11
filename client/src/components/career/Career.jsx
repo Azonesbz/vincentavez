@@ -42,9 +42,9 @@ export default function Career() {
 
     return (
         <>
-            <section className="container min-h-screen mt-10 flex-grow w-full relative z-1 py-24" id="parcours">
+            <section className="container min-h-screen mt-10 flex-grow w-full relative z-1 py-24 " id="parcours">
                 <h2 className="relative z-0">Le parcours de Vincent</h2>
-                <div className="bg-stone-200 w-[90%] sm:w-[60%] mt-10 p-5 rounded-r-xl shadow-xl mr-auto relative z-2">
+                <div className="bg-stone-200 w-[90%] sm:w-[60%] mt-10 p-5 rounded-r-xl shadow-xl mr-auto relative z-2 elementLeft">
                     <div className="flex justify-between items-center">
                         <h3>Je m'appelle Vincent, et j'ai 19 ans.</h3>
 
@@ -67,24 +67,24 @@ export default function Career() {
                         <p className="mt-5"></p>
                     </div>
                 </div>
-                <div className="bg-stone-200 w-[90%] sm:w-[60%] mt-10 p-5 rounded-l-xl shadow-xl ml-auto relative z-2">
+                <div className="bg-stone-200 w-[90%] sm:w-[60%] mt-10 p-5 rounded-l-xl shadow-xl ml-auto relative z-2 elementRight">
                     <div className="flex justify-between items-center">
                         <h3>D'où je viens ?</h3>
                     </div>
-                        <div className="flex flex-col space-y-5">
-                            <p className="mt-5">Né à Saint-Mandé, dans le Val-de-Marne, je suis quelqu'un de très logique et créatif. Depuis tout petit j'aime trouver la solution aux problèmes que je rencontre, j'aime aussi dessiner et construire des choses !</p>
-                            <p className="mt-5"></p>
-                        </div>
+                    <div className="flex flex-col space-y-5">
+                        <p className="mt-5">Né à Saint-Mandé, dans le Val-de-Marne, je suis quelqu'un de très logique et créatif. Depuis tout petit j'aime trouver la solution aux problèmes que je rencontre, j'aime aussi dessiner et construire des choses !</p>
+                        <p className="mt-5"></p>
                     </div>
-                    <div className="bg-stone-200 w-[90%] sm:w-[60%] mt-10 p-5 rounded-r-xl shadow-xl mr-auto relative z-2">
-                        <h3>Maintenant</h3>
-                        <div className="flex flex-col space-y-5">
-                            <p className="mt-5">Je suis à la recherche de "The entreprise !" pour septembre prochain. J'ai pour ambition d'apprendre les langages <Link className="text-indigo-800" to="https://www.typescriptlang.org/" target="_blank">TypeScript</Link>,  <Link className="text-indigo-800" to="https://www.typescriptlang.org/" target="_blank">NextJS</Link>,  <Link className="text-indigo-800" to="https://www.typescriptlang.org/" target="_blank">Prisma</Link>,  <Link className="text-indigo-800" to="https://www.typescriptlang.org/" target="_blank">GraphQL</Link>. </p>
-                            <p className="mt-5">Avant toutes chose, j'ai besoin d'un projet stimulant, intéressant, et pour lequel je partage des valeurs similaires.</p>
-                            <p className="mt-5">Je suis ouvert à toute proposition, veuillez me contacter sur mon adresse mail. <a href="#contact" className="text-indigo-800">Ici</a></p>
-                        </div>
+                </div>
+                <div className="bg-stone-200 w-[90%] sm:w-[60%] mt-10 p-5 rounded-r-xl shadow-xl mr-auto relative z-2 elementLeft">
+                    <h3>Maintenant</h3>
+                    <div className="flex flex-col space-y-5">
+                        <p className="mt-5">Je suis à la recherche de "The entreprise !" pour septembre prochain. J'ai pour ambition d'apprendre les langages <Link className="text-indigo-800" to="https://www.typescriptlang.org/" target="_blank">TypeScript</Link>,  <Link className="text-indigo-800" to="https://www.typescriptlang.org/" target="_blank">NextJS</Link>,  <Link className="text-indigo-800" to="https://www.typescriptlang.org/" target="_blank">Prisma</Link>,  <Link className="text-indigo-800" to="https://www.typescriptlang.org/" target="_blank">GraphQL</Link>. </p>
+                        <p className="mt-5">Avant toutes chose, j'ai besoin d'un projet stimulant, intéressant, et pour lequel je partage des valeurs similaires.</p>
+                        <p className="mt-5">Je suis ouvert à toute proposition, veuillez me contacter sur mon adresse mail. <a href="#contact" className="text-indigo-800">Ici</a></p>
                     </div>
-                    <div className="bg-stone-200 w-[90%] sm:w-[60%] mt-10 p-5 rounded-l-xl shadow-xl ml-auto relative z-2 flex flex-col space-y-5">
+                </div>
+                    <div className="bg-stone-200 w-[90%] sm:w-[60%] mt-10 p-5 rounded-l-xl shadow-xl ml-auto relative z-2 flex flex-col space-y-5 elementRight">
                         <div className="flex items-center justify-between">
                             <h3>Compétences</h3>
                             <button onClick={handleReduceCompetence}>

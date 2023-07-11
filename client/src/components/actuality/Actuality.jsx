@@ -24,11 +24,10 @@ export default function Actuality(){
       
     return (
         <>
-            <section className="container py-24" id="actuality">
+            <section className="container py-20 mt-4 elementLeft" id="actuality">
                 <h2>Les actualités</h2>
                 <div className="grid grid-cols-12 gap-5">
                     {post ? post.map((el, index) => {
-                        const newEmblaIndex = index+'Ref'
                         
                         const date              = new Date(el.date).toLocaleDateString()
                         const pictures          = el.pictures.split('|||')

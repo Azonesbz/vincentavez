@@ -116,6 +116,27 @@ p, i, span, input, textarea {
     animation: aurora-border 6s ease-in-out infinite,
       aurora-4 20s ease-in-out infinite alternate;
   }
+
+  .elementHidden {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+  .elementRight {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 1s;
+}
+  .elementLeft {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.elementShow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
   @keyframes aurora-1 {
     0% {
       top: 0;

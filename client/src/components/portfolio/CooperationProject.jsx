@@ -10,7 +10,7 @@ export default function Cooperation() {
     const [whispeeRef] = useEmblaCarousel(embla_OPTIONS)
     return (
         <>
-            <div className="mt-10 flex flex-col col-span-12 md:col-span-6">
+            <div className="mt-10 flex flex-col col-span-12 md:col-span-6 elementLeft">
                 <div className="embla" ref={whispeeRef}>
                     <div className="embla__container">
                         <div className="embla__slide">
