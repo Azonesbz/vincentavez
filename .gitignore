@@ -24,3 +24,5 @@ dist-ssr
 *.sw?
 
 .env
+https_cert
+pnpm-lock.yaml
