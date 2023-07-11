@@ -100,7 +100,7 @@ export default function Project() {
                 <div className="flex flex-col p-2 mt-3 md:mt-0 bg-neutral-100 md:p-5 shadow-xl">
                     <div className="flex justify-between items-start">
                         <h3>SpaceZone</h3>
-                        <i className="text-sm">06/03/2023</i>
+                        <i className="text-sm">07/04/2023</i>
                     </div>
                     <div className="flex flex-col space-y-2 mt-5">
                         <p>Je vous présente SpaceZone, un projet d'e-commerce que j'ai dû effectuer pour mon école, il m'aura permis d'obtenir mon diplôme !</p>
