@@ -17,7 +17,6 @@ export default function Header() {
 
     useEffect(() => {
         const dropdownContent = dropdownRef.current;
-        console.log(dropdownContent)
         dropdownContent.style.height = dropdown ? `${150}px` : '0px';
 
     }, [dropdown]);
