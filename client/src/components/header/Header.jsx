@@ -21,7 +21,7 @@ export default function Header() {
         <header className='container min-h-screen max-h-screen flex items-center w-full overflow-x-hidden sm:p-10 justify-around'>
             <div className={`h-[60px] w-full bg-white fixed top-0 z-40 opacity-75 backdrop-blur-xl ${scrollPosition >= 15 ? "shadow" : "" }`} />
             <div className={`h-[60px] w-full bg-white fixed top-0 z-40 opacity-50 backdrop-blur-sm mix-blend-color ${scrollPosition >= 15 ? "shadow" : "" }`} />
-            <nav className={` fixed top-0 z-50 flex items-center justify-between sm:justify-normal h-[60px]`}>
+            <nav className={` fixed top-0 z-50 flex items-center justify-between w-full sm:justify-center h-[60px]`}>
                 
                 <ul className='space-x-10 mr-10 hidden sm:flex items-center ml-10 h-full uppercase '>
                     <li className='item-link'><a className='text-[1rem]' href={"#actuality"}>Actualité</a></li>
@@ -34,18 +34,21 @@ export default function Header() {
                     <div className="w-full flex-none [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]" />
                     <div className="-ml-[100%] w-full flex-none [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]" />
                 </div>
-                <div className="dropdown sm:hidden">
-                    <div className='flex mr-5 space-x-2 items-center'>
-                        <svg width="25" height="25" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="m6 9 6 6 6-6"></path>
-                        </svg>
-                        <button className="dropbtn ">Menu</button>
-                    </div>
-                    <div className="dropdown-content">
-                        <a href="#actuality">Actualité</a>
-                        <a href="#parcours">Parcours</a>
-                        <a href="#portfolio">Portfolio</a>
-                        <a href="#contact">Contact</a>
+                <div className="flex items-center justify-between w-full sm:hidden">
+                    <a className='ml-5' href='#'><img src="./logo.webp" alt="logo du site" width={50} /></a>
+                    <div className='dropdown'>
+                        <div className='flex mr-5 space-x-2 items-center'>
+                            <svg width="25" height="25" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg>
+                            <button className="dropbtn ">Menu</button>
+                        </div>
+                        <div className="dropdown-content">
+                            <a href="#actuality">Actualité</a>
+                            <a href="#parcours">Parcours</a>
+                            <a href="#portfolio">Portfolio</a>
+                            <a href="#contact">Contact</a>
+                        </div>
                     </div>
                 </div>
             </nav>
