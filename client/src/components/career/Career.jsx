@@ -70,18 +70,6 @@ export default function Career() {
                 <div className="bg-stone-200 w-[90%] sm:w-[60%] mt-10 p-5 rounded-l-xl shadow-xl ml-auto relative z-2">
                     <div className="flex justify-between items-center">
                         <h3>D'où je viens ?</h3>
-                        <div className="info">
-                            <div className='flex mr-5 space-x-2 items-center'>
-                                <svg width="30" height="30" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z"></path>
-                                    <path d="M12 8h.01"></path>
-                                    <path d="M11 12h1v4h1"></path>
-                                </svg>
-                            </div>
-                            <div className="info-content">
-                                <p>Je suis né le 22 juillet, dans le Val-de-Marne(94) à Saint-Mandé 😉</p>
-                            </div>
-                        </div>
                     </div>
                         <div className="flex flex-col space-y-5">
                             <p className="mt-5">Né à Saint-Mandé, dans le Val-de-Marne, je suis quelqu'un de très logique et créatif. Depuis tout petit j'aime trouver la solution aux problèmes que je rencontre, j'aime aussi dessiner et construire des choses !</p>
