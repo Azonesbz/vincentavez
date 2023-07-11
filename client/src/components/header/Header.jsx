@@ -1,9 +1,12 @@
 import './Header.css';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 
 export default function Header() {
     const [scrollPosition, setScrollPosition] = useState(0)
+    const [dropdown, setDropdown] = useState(false)
+
+    const dropdownRef = useRef(null)
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll, { passive: true });
@@ -12,10 +15,19 @@ export default function Header() {
         };
     }, []);
 
+    useEffect(() => {
+        const dropdownContent = dropdownRef.current;
+        console.log(dropdownContent)
+        dropdownContent.style.height = dropdown ? `${150}px` : '0px';
+
+    }, [dropdown]);
+
     let handleScroll = () => {
         const position = window.pageYOffset
         setScrollPosition(position)
     }
+
+    
 
     return (
         <header className='container min-h-screen max-h-screen flex items-center w-full overflow-x-hidden sm:p-10 justify-around'>
@@ -37,13 +49,14 @@ export default function Header() {
                 <div className="flex items-center justify-between w-full sm:hidden">
                     <a className='ml-5' href='#'><img src="./logo.webp" alt="logo du site" width={50} /></a>
                     <div className='dropdown'>
-                        <div className='flex mr-5 space-x-2 items-center'>
-                            <svg width="25" height="25" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="m6 9 6 6 6-6"></path>
+                        <div className='flex mr-5 space-x-2 items-center' onClick={() => dropdown ? setDropdown(false) : setDropdown(true)}>
+                            <svg width="46" height="46" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" >
+                                <path d="M20.05 11H3.95a.95.95 0 0 0-.95.95v.1c0 .525.425.95.95.95h16.1a.95.95 0 0 0 .95-.95v-.1a.95.95 0 0 0-.95-.95Z"></path>
+                                <path d="M20.05 16H3.95a.95.95 0 0 0-.95.95v.1c0 .525.425.95.95.95h16.1a.95.95 0 0 0 .95-.95v-.1a.95.95 0 0 0-.95-.95Z"></path>
+                                <path d="M20.05 6H3.95a.95.95 0 0 0-.95.95v.1c0 .525.425.95.95.95h16.1a.95.95 0 0 0 .95-.95v-.1a.95.95 0 0 0-.95-.95Z"></path>
                             </svg>
-                            <button className="dropbtn ">Menu</button>
                         </div>
-                        <div className="dropdown-content">
+                        <div className={`dropdown-content duration-500 ease-out flex flex-col overflow-hidden shadow ${dropdown ? " h-auto" : "h-0 "}`} ref={dropdownRef} onClick={() => setDropdown(false)}>
                             <a href="#actuality">Actualité</a>
                             <a href="#parcours">Parcours</a>
                             <a href="#portfolio">Portfolio</a>

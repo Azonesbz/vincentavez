@@ -43,14 +43,12 @@
 }
 
 .dropdown-content {
-  display: none;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(2, 2, 2, 0.2);
   z-index: 1;
   right: 20px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .dropdown-content>a {
@@ -60,18 +58,7 @@
   padding-block: 5px;
 }
 
-
-.dropdown:hover .dropdown-content {
-  display: flex;
-  flex-direction: column;
-
-}
-
 .dropdown-content>a:hover {
 
   background-color: #e5d9d9;
-}
-
-.dropdown-content:focus {
-  display: none;
 }
