@@ -34,10 +34,10 @@ h2 {
     font-weight: 400;
     font-style: italic;
 }
-h3, label {
+h3 {
     font-size: var(--fs3);
 }
-h4 {
+h4, label {
   font-size: var(--fs4);
 }
 p, i, span, input, textarea {
