@@ -39,7 +39,7 @@ export default function Actuality(){
                                     <div className="embla__container">
                                         {pictures && pictures.map((picture, index) => (
                                             <div key={index} className="embla__slide">
-                                                <LazyLoad className="min-h-full" once height={250}>
+                                                <LazyLoad className="min-h-full" once width={250}>
                                                     <img
                                                         className="min-h-full object-cover object-center"
                                                         src={`./${picture}`}
@@ -53,7 +53,7 @@ export default function Actuality(){
                                 <div className="flex flex-col p-5 shadow-xl">
 
                                     <div className="flex justify-between items-start">
-                                        <h2>{el.title}</h2>
+                                        <h3>{el.title}</h3>
                                         <i className="text-sm">{date}</i>
                                     </div>
                                     <div className="flex flex-col space-y-2 mt-5">
