@@ -69,7 +69,7 @@ export default function Career() {
                 </div>
                 <div className="bg-stone-200 w-[90%] sm:w-[60%] mt-10 p-5 rounded-l-xl shadow-xl ml-auto relative z-2">
                     <div className="flex justify-between items-center">
-                        <h2>D'où je viens ?</h2>
+                        <h3>D'où je viens ?</h3>
                         <div className="info">
                             <div className='flex mr-5 space-x-2 items-center'>
                                 <svg width="30" height="30" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -89,7 +89,7 @@ export default function Career() {
                         </div>
                     </div>
                     <div className="bg-stone-200 w-[90%] sm:w-[60%] mt-10 p-5 rounded-r-xl shadow-xl mr-auto relative z-2">
-                        <h2>Maintenant</h2>
+                        <h3>Maintenant</h3>
                         <div className="flex flex-col space-y-5">
                             <p className="mt-5">Je suis à la recherche de "The entreprise !" pour septembre prochain. J'ai pour ambition d'apprendre les langages <Link className="text-indigo-800" to="https://www.typescriptlang.org/" target="_blank">TypeScript</Link>,  <Link className="text-indigo-800" to="https://www.typescriptlang.org/" target="_blank">NextJS</Link>,  <Link className="text-indigo-800" to="https://www.typescriptlang.org/" target="_blank">Prisma</Link>,  <Link className="text-indigo-800" to="https://www.typescriptlang.org/" target="_blank">GraphQL</Link>. </p>
                             <p className="mt-5">Avant toutes chose, j'ai besoin d'un projet stimulant, intéressant, et pour lequel je partage des valeurs similaires.</p>
@@ -98,7 +98,7 @@ export default function Career() {
                     </div>
                     <div className="bg-stone-200 w-[90%] sm:w-[60%] mt-10 p-5 rounded-l-xl shadow-xl ml-auto relative z-2 flex flex-col space-y-5">
                         <div className="flex items-center justify-between">
-                            <h2>Compétences</h2>
+                            <h3>Compétences</h3>
                             <button onClick={handleReduceCompetence}>
                                 <svg width="30" height="30" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M18 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"></path>
