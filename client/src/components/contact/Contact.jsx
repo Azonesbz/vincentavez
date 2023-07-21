@@ -36,13 +36,11 @@ export default function Contact() {
             <section className='py-24 container' id='contact'>
 
                 <h2>Contact</h2>
-                <form className='flex flex-col gap-5' onSubmit={handleSubmit}>
+                <form className='flex flex-col gap-5 mt-10' onSubmit={handleSubmit}>
                     <div className='flex flex-col'>
-                        <label htmlFor="email">
-                            Votre adresse mail
-                        </label>
                         <input
-                            className='border w-1/3 outline-none py-2 px-2 rounded-sm invalid:text-red-500 valid:text-blue-600'
+                            className='focus:border-l max-w-2xl focus:ml-5 focus:pl-5 pl-2 py-2 border-black outline-none duration-100 shadow'
+                            placeholder='Email'
                             id="email"
                             type="email"
                             minLength={5}
@@ -57,11 +55,9 @@ export default function Contact() {
                         />
                     </div>
                     <div className='flex flex-col'>
-                        <label htmlFor="email">
-                            Votre message
-                        </label>
                         <textarea
-                            className='border outline-none py-2 px-2 rounded-sm'
+                        placeholder='Message'
+                            className='focus:border-l focus:ml-5 focus:pl-5 pl-2 border-black outline-none duration-100 shadow'
                             minLength={5}
                             id="message"
                             name="message"
@@ -72,7 +68,7 @@ export default function Contact() {
                             errors={state.errors}
                         />
                     </div>
-                    <button className='bg-blue-600 py-2 px-4 w-24 rounded-sm' type="submit" disabled={state.submitting}>
+                    <button className='bg-blue-600 py-2 px-4 w-24 rounded-sm font-semibold' type="submit" disabled={state.submitting}>
                         Envoyer
                     </button>
                 </form>
