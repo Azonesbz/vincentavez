@@ -66,9 +66,6 @@ export default function Home() {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('elementShowFooter')
-                    setTimeout(() => {
-                      entry.target.children[0].classList.add('left')
-                    }, 500);
                     entry.target.classList.remove('elementFooter');
 
                 } else {
