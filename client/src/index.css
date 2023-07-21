@@ -138,20 +138,18 @@ p, i, span, input, textarea {
 }
 .elementShowFooter {
   opacity: 1;
-  animation: footer 0.8s cubic-bezier(0.735, 0.280, 0.935, 0.635);
-  height: 250px;
+  width: 96px;
+  animation: footer 0.5s cubic-bezier(0.735, 0.280, 0.935, 0.635);
 }
 .elementFooter {
   opacity: 0;
   width: 0;
-  height: 180px;
-  transition: all 500ms ;
 }
 .left {
   opacity: 1;
     position: absolute;
     left: 0;
-    transition: all 1s;
+    transition: all 0.5s;
     animation: moveLeft 0.5s cubic-bezier(0.735, 0.280, 0.935, 0.635);
 }
 .right {
@@ -172,7 +170,7 @@ p, i, span, input, textarea {
   }
 
   100% {
-    width: 100%;
+    width: 96px;
   }
 }
   @keyframes aurora-1 {
