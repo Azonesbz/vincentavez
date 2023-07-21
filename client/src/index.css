@@ -136,7 +136,45 @@ p, i, span, input, textarea {
   opacity: 1;
   transform: translateX(0);
 }
+.elementShowFooter {
+  opacity: 1;
+  animation: footer 0.8s cubic-bezier(0.735, 0.280, 0.935, 0.635);
+  height: 250px;
+}
+.elementFooter {
+  opacity: 0;
+  width: 0;
+  height: 180px;
+  transition: all 500ms ;
+}
+.left {
+  opacity: 1;
+    position: absolute;
+    left: 0;
+    transition: all 1s;
+    animation: moveLeft 0.5s cubic-bezier(0.735, 0.280, 0.935, 0.635);
+}
+.right {
+    opacity: 0;
+}
+@keyframes moveLeft {
+  0% {
+    left: 60%;
+  }
 
+  100% {
+    left: 0;
+  }
+}
+@keyframes footer {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
   @keyframes aurora-1 {
     0% {
       top: 0;

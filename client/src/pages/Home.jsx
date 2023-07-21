@@ -35,12 +35,57 @@ export default function Home() {
         hiddenElementsRight.forEach((el) => observerRight.observe(el));
     
         return () => {
+            
             observerLeft.disconnect();
-            observerRight.disconnect();
         }
       }, []);
 
-    
+      useEffect(() => {
+
+        const observerRight = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('elementShow');
+                } else {
+                    entry.target.classList.remove('elementShow');
+                }
+            });
+        });
+
+          const hiddenElementsRight = document.querySelectorAll('.elementRight');
+
+          hiddenElementsRight.forEach((el) => observerRight.observe(el));
+
+        return () => {
+            observerRight.disconnect();
+        }
+      }, [])
+
+    useEffect(() => {
+        const observerFooter = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('elementShowFooter')
+                    setTimeout(() => {
+                      entry.target.children[0].classList.add('left')
+                    }, 500);
+                    entry.target.classList.remove('elementFooter');
+
+                } else {
+                    entry.target.classList.remove('elementShowFooter');
+                    entry.target.classList.add('elementFooter');
+                }
+            });
+        });
+
+          const hiddenElementsRight = document.querySelectorAll('.elementFooter');
+
+          hiddenElementsRight.forEach((el) => observerFooter.observe(el));
+
+        return () => {
+            observerFooter.disconnect();
+        }
+    }, [])
     return (
         <>
             <Header />
