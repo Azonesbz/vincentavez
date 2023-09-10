@@ -15,7 +15,24 @@ export default {
         '2xl': '6rem',
       },
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        'roboto': ['Roboto', 'sans'],
+      },
+      animation: {
+        'scale': 'scale 30s ease-in-out infinite',
+      },
+      keyframes: {
+        scale: {
+          '0%': { scale: '.75' },
+          '20%': { scale: '1' },
+          '40%': { scale: '0.90' },
+          '60%': { scale: '0.95' },
+          '80%': { scale: '0.70' },
+          '100%': { scale: '0.75' },
+        },
+      },
+    },
   },
   plugins: [],
 }

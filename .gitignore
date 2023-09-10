@@ -26,3 +26,6 @@ dist-ssr
 .env
 https_cert
 pnpm-lock.yaml
+client/pnpm-lock.yaml
+*.yaml
+client/pnpm-lock.yaml

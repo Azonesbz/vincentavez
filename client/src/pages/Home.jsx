@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import Actuality from "../components/actuality/Actuality";
 import Career from "../components/career/Career";
 import Contact from "../components/contact/Contact";
 import Footer from "../components/footer/Footer";
@@ -86,7 +85,6 @@ export default function Home() {
     return (
         <>
             <Header />
-            <Actuality />
             <Career />
             <Portfolio />
             <Contact />

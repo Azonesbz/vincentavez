@@ -55,7 +55,7 @@ export default function Footer(){
                                 </Link>
                             </li>
                         </ul>
-                        <div className=" relative ml-10 elementFooter flex justify-end w-24" ref={imgRef}>
+                        <div className="relative ml-10 elementFooter flex justify-end w-24" ref={imgRef}>
                             <img src="logo.webp" alt="logo" className="relative translate-x-[35%]" width={200} height={200} />
                             <img src="logo.webp" alt="logo" className="rotate-180 relative" width={200} height={200} />
                         </div>
