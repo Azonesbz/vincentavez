@@ -7,25 +7,27 @@ const embla_OPTIONS = {
     align: 'center',
 }
 
-const Project = ({project, name, date, github, children}) => {
+const Project = ({project, name, date, github, subName, children}) => {
     const [emblaRef] = useEmblaCarousel(embla_OPTIONS)
     return (
-        <div className="mt-10 flex flex-col col-span-12 md:col-span-6 elementLeft" id='roadmytrip'>
-                <div className="embla" ref={emblaRef}>
+        <div className="mt-10 flex flex-col col-span-12 md:col-span-6 rounded-3xl" id='roadmytrip'>
+                <div className="embla rounded-t-3xl" ref={emblaRef}>
                     <div className="embla__container">
                         {project.images.map((image, index) => (
                             <div className="embla__slide" key={index}>
-                                <LazyLoad once height={50}>
+                                <LazyLoad once>
                                     <img src={image} alt={image} />
                                 </LazyLoad>
                             </div>
                         ))}
                     </div>
                 </div>
-                <div className="flex flex-col p-2 mt-3 md:mt-0 md:p-5 bg-[#000249] text-white shadow-xl">
+                <div className="flex flex-col p-2 mt-3 md:mt-0 md:p-5 text-white rounded-b-3xl bg-[#000249]">
 
                     <div className="flex justify-between items-start">
-                        <h3>{name}</h3>
+                        <div className='flex gap-5 items-end'>
+                            <h3>{name} | <span>{subName}</span></h3>
+                        </div>
                         <i className="text-sm">{date}</i>
                     </div>
                     {children}

@@ -33,13 +33,13 @@ export default function Contact() {
 
     return (
         <>
-            <section className='py-24 container' id='contact'>
+            <section className='py-24 px-48' id='contact'>
 
-                <h2>Contact</h2>
-                <form className='flex flex-col gap-5 mt-10' onSubmit={handleSubmit}>
-                    <div className='flex flex-col'>
+                <h2 className="text-center text-5xl font-bold">Contact</h2>
+                <form className='flex flex-col justify-center items-center gap-5 mt-10' onSubmit={handleSubmit}>
+                    <div className='flex flex-col w-1/3'>
                         <input
-                            className='focus:border-l max-w-2xl focus:ml-5 focus:pl-5 pl-2 py-2 border-black outline-none duration-100 shadow'
+                            className='focus:border-l max-w-2xl focus:ml-5 focus:pl-5 pl-2 py-2 border-black outline-none duration-100 shadow rounded-tr-3xl'
                             placeholder='Email'
                             id="email"
                             type="email"
@@ -54,10 +54,10 @@ export default function Contact() {
                             errors={state.errors}
                         />
                     </div>
-                    <div className='flex flex-col'>
+                    <div className='flex flex-col w-1/3'>
                         <textarea
                         placeholder='Message'
-                            className='focus:border-l focus:ml-5 focus:pl-5 pl-2 border-black outline-none duration-100 shadow'
+                            className='focus:border-l focus:ml-5 focus:pl-5 px-2 py-2 border-black outline-none duration-100 shadow rounded-r-3xl h-48'
                             minLength={5}
                             id="message"
                             name="message"
@@ -68,7 +68,7 @@ export default function Contact() {
                             errors={state.errors}
                         />
                     </div>
-                    <button type="submit" disabled={state.submitting} className='mt-5 w-24 border bg-[#000249] text-white py-2 px-4 rounded-full'>
+                    <button type="submit" disabled={state.submitting} className='mt-5 mr-full w-48 bg-[#000249] text-white py-2 px-4 rounded-3xl'>
                         Envoyer
                     </button>
                 </form>

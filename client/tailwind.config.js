@@ -18,6 +18,7 @@ export default {
     extend: {
       fontFamily: {
         'roboto': ['Roboto', 'sans'],
+        'Kanit': ['Kanit', 'sans'],
       },
       animation: {
         'scale': 'scale 30s ease-in-out infinite',

@@ -7,6 +7,7 @@ export default function Career() {
     const TimelineRef = useRef(null)
     return (
         <>
+            <div className="min-w-screen h-1 bg-gradient-to-b from-[#000249] to-transparent" />
             <section className="px-48 min-h-full mt-10 flex-grow w-full relative z-1 py-24 " id="courses">
                 <h2 className="text-center z-0 font-bold text-5xl">Courses</h2>
                 <Timeline className="mt-16" ref={TimelineRef}>

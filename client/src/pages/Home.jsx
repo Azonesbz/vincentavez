@@ -4,6 +4,7 @@ import Contact from "../components/contact/Contact";
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
 import Portfolio from "../components/portfolio/Portfolio";
+import Skills from "../components/Skills/Skills";
 
 export default function Home() {
 
@@ -86,6 +87,7 @@ export default function Home() {
         <>
             <Header />
             <Career />
+            <Skills />
             <Portfolio />
             <Contact />
             <Footer />
