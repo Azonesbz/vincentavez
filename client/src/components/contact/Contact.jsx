@@ -68,7 +68,7 @@ export default function Contact() {
                             errors={state.errors}
                         />
                     </div>
-                    <button className='bg-blue-600 py-2 px-4 w-24 rounded-sm font-semibold' type="submit" disabled={state.submitting}>
+                    <button type="submit" disabled={state.submitting} className='mt-5 w-24 border bg-[#000249] text-white py-2 px-4 rounded-full'>
                         Envoyer
                     </button>
                 </form>
