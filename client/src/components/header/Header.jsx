@@ -39,10 +39,10 @@ export default function Header() {
                 <img className='rounded-full w-10' src="/me.webp" alt="picture of Vincent" />
 
                 <ul className='space-x-10 hidden sm:flex items-center h-full uppercase text-sm font-medium mx-auto'>
-                    <li><a href={"#actuality"}>Actualité</a></li>
-                    <li><a href={"#parcours"}>Parcours</a></li>
+                    <li><a href={"#courses"}>Courses</a></li>
+                    <li><a href={"#skills"}>Skills</a></li>
                     <a className='ml-5' href='#'><img src="./logo.webp" alt="logo du site" width={50} /></a>
-                    <li><a href={"#portfolio"}>Portfolio</a></li>
+                    <li><a href={"#projects"}>Projects</a></li>
                     <li><a href={"#contact"}>Contact</a></li>
                 </ul>
 
@@ -66,7 +66,7 @@ export default function Header() {
                 </div>
             </nav>
 
-            <img className='absolute inset-0 min-h-screen min-w-screen blur-3xl z-0 animate-scale duration-200' src="./halo.png" autoPlay loop></img>
+            <img className='absolute inset-0 min-h-screen min-w-screen blur-3xl z-0 animate-scale duration-200' src="./halo.png" autoPlay loop />
 
             <div>
 
@@ -111,7 +111,7 @@ export default function Header() {
 
             <a
                 className='animate-one absolute bottom-0 sm:bottom-5 rounded-full duration-1000 left-[50%] translate-x-[-50%] z-10'
-                href={"#actuality"}
+                href={"#courses"}
             >
                 <svg className='animate-bounce' width="40" height="40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="m6 9 6 6 6-6"></path>
