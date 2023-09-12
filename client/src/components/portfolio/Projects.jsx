@@ -28,7 +28,7 @@ export default function Project() {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col p-2 mt-3 md:mt-0 md:p-5 bg-neutral-100 shadow-xl">
+                <div className="flex flex-col p-2 mt-3 md:mt-0 md:p-5 bg-[#000249] text-white shadow-xl">
 
                     <div className="flex justify-between items-start">
                         <h3>RoadMyTrip</h3>
@@ -98,7 +98,7 @@ export default function Project() {
                     </div>
                 </div>
 
-                <div className="flex flex-col p-2 mt-3 md:mt-0 bg-neutral-100 md:p-5 shadow-xl">
+                <div className="flex flex-col p-2 mt-3 md:mt-0 bg-[#000249] text-white md:p-5 shadow-xl">
                     <div className="flex justify-between items-start">
                         <h3>SpaceZone</h3>
                         <i className="text-sm">07/04/2023</i>
