@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Career from "../components/career/Career";
+import Courses from "../components/courses/Courses";
 import Contact from "../components/contact/Contact";
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
@@ -86,8 +86,8 @@ export default function Home() {
     return (
         <>
             <Header />
-            <Career />
-            <Skills />
+            {/* <Courses /> */}
+            {/* <Skills /> */}
             <Portfolio />
             <Contact />
             <Footer />

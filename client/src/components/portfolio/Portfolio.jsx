@@ -3,12 +3,8 @@ import "./Portfolio.css"
 
 export default function Portfolio(){
 
-    const RoadMyTrip = {
-        images: ["roadmytrip.webp", "register.webp"],
-        stacks: ['NodeJS', "EJS", "TailwindCSS", "SQL"]
-    }
     const SpaceZone = {
-        images: ["homepage.webp", "cart.webp", "product.webp", "authentification.webp", "profil2.webp", "backoffice.webp"],
+        images: ["cart.webp", "product.webp", "authentification.webp", "profil2.webp", "backoffice.webp"],
         stacks: ['NodeJS', "React","Redux", "TailwindCSS", "SQL"]
     }
     const Uncore = {
@@ -30,13 +26,6 @@ export default function Portfolio(){
                             <p>Un très gros projet arrive et sera disponible début 2024.</p>
                             <p>Vous pouvez suivrent ces avancements sur nos réseaux sociaux ou bien sur notre discord communautaire.</p>
                             <p>Vous pouvez également postuler sur cette adresse mail si vous recherchez une alternance</p>
-                        </div>
-                    </Project>
-                    <Project project={RoadMyTrip} name={"RoadMyTrip"} subName={"Site de réservation de voyage"} date={"06/03/2023"}>
-                        <div className="flex flex-col space-y-2 mt-5">
-                            <p>C'est toujours marrant de voir par quoi nous avons commencer. Voici mon premier site internet, réaliser en 1 semaine.</p>
-                            <p>Grâce à ce site, j'ai appris à manipuler des données provenant d'une API.</p>
-                            <p>J'ai aussi appris à stocker des données, et les récupérer pour les vérifiers</p>
                         </div>
                     </Project>
                     <Project project={SpaceZone} name={"SpaceZone"} subName={"Site e-commerce"} date={"11/05/2023"} github={"https://github.com/Azonesbz/SpaceZone"}>

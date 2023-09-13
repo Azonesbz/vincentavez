@@ -33,11 +33,11 @@ export default function Contact() {
 
     return (
         <>
-            <section className='py-24 px-48' id='contact'>
+            <section className='py-24 lg:px-48' id='contact'>
 
                 <h2 className="text-center text-5xl font-bold">Contact</h2>
-                <form className='flex flex-col justify-center items-center gap-5 mt-10' onSubmit={handleSubmit}>
-                    <div className='flex flex-col w-1/3'>
+                <form className='flex flex-col justify-center items-start mx-auto lg:w-1/3 gap-5 mt-10 p-5' onSubmit={handleSubmit}>
+                    <div className='flex flex-col w-full'>
                         <input
                             className='focus:border-l max-w-2xl focus:ml-5 focus:pl-5 pl-2 py-2 border-black outline-none duration-100 shadow rounded-tr-3xl'
                             placeholder='Email'
@@ -54,7 +54,7 @@ export default function Contact() {
                             errors={state.errors}
                         />
                     </div>
-                    <div className='flex flex-col w-1/3'>
+                    <div className='flex flex-col w-full'>
                         <textarea
                         placeholder='Message'
                             className='focus:border-l focus:ml-5 focus:pl-5 px-2 py-2 border-black outline-none duration-100 shadow rounded-r-3xl h-48'
@@ -68,7 +68,7 @@ export default function Contact() {
                             errors={state.errors}
                         />
                     </div>
-                    <button type="submit" disabled={state.submitting} className='mt-5 mr-full w-48 bg-[#000249] text-white py-2 px-4 rounded-3xl'>
+                    <button type="submit" disabled={state.submitting} className='mt-5 mr-full w-48 bg-[#000249] text-white py-2 px-4 mx-auto rounded-3xl font-semibold'>
                         Envoyer
                     </button>
                 </form>

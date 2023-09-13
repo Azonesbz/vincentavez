@@ -28,8 +28,7 @@ export default function Footer(){
             <footer className="container py-10 ">
                 <div className="flex flex-col items-center justify-center">
                     <a href={"/"} className="w-full flex justify-center" ref={imgRef}>
-                        <img src="logo.webp" alt="logo" className="translate-x-[16.5%]" width={100} height={100} />
-                        <img src="logo.webp" alt="logo" className="rotate-180 translate-x-[-16.5%]" width={100} height={100} />
+                        <img src="Vincent_2_.webp" alt="logo" width={100} height={100} />
                     </a>
                 <SocialLink className={"flex mt-5"} handleCopy={handleCopy} />
                 </div>

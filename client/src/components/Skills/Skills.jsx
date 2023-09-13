@@ -5,7 +5,7 @@ const Skills = () => {
         <>
             <section className="container py-20 mt-10" id="skills">
                 <h2 className="text-center text-5xl font-bold">Skills</h2>
-                <div className="grid grid-cols-12 justify-items-center mt-10 text-white">
+                <div className="grid grid-cols-12 lg:justify-items-center mt-10 text-white gap-10">
                     <Skill title={"Front-end"}>
                         <ul className="flex flex-col">
                             <li>React</li>
