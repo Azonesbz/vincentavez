@@ -1,6 +1,7 @@
 import useEmblaCarousel from 'embla-carousel-react'
 import LazyLoad from 'react-lazyload'
 import { Link } from 'react-router-dom'
+import Autoplay from 'embla-carousel-autoplay'
 
 const embla_OPTIONS = {
     loop: true,
@@ -8,21 +9,21 @@ const embla_OPTIONS = {
 }
 
 const Project = ({project, name, date, github, subName, children}) => {
-    const [emblaRef] = useEmblaCarousel(embla_OPTIONS)
+    const [emblaRef] = useEmblaCarousel(embla_OPTIONS, [Autoplay()])
     return (
         <div className="mt-10 flex flex-col col-span-12 md:col-span-6 sm:rounded-3xl bg-[#071952] p-2">
-            <div className="overflow-hidden sm:rounded-3xl h-full" ref={emblaRef}>
+            <div className="overflow-hidden sm:rounded-3xl max-h-min h-min" ref={emblaRef}>
                 <div className="flex cursor-grab">
                     {project.images.map((image, index) => (
                         <div className="flex flex-[0_0_100%] min-w-0" key={index}>
                             <LazyLoad once>
-                                <img src={image} alt={image} />
+                                <img className='h-full object-cover' src={image} alt={image} width={1280} height={720} />
                             </LazyLoad>
                         </div>
                     ))}
                 </div>
             </div>
-            <div className="flex flex-col justify-between h-full p-2 text-white rounded-b-3xl mt-2">
+            <div className="flex flex-col justify-between p-2 text-white rounded-b-3xl mt-2">
                 <div className='flex flex-col'>
                     <div className="flex justify-between items-start">
                         <div className='flex gap-5 items-end'>

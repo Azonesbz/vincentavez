@@ -8,6 +8,9 @@ dependencies:
   '@formspree/react':
     specifier: ^2.5.1
     version: 2.5.1(react-dom@18.2.0)(react@18.2.0)
+  embla-carousel-autoplay:
+    specifier: 8.0.0-rc12
+    version: 8.0.0-rc12(embla-carousel@8.0.0-rc12)
   embla-carousel-react:
     specifier: 8.0.0-rc07
     version: 8.0.0-rc07(react@18.2.0)
@@ -1006,6 +1009,14 @@ packages:
     resolution: {integrity: sha512-MGO1k0w1RgrfdbLVwmXcDhHHuxCn2qRgR7dYsJvWFKDttvYPx6FNzCGG0c/fBBvzK2LDh3UV7Tt9awnHnvAAUQ==}
     dev: true
 
+  /embla-carousel-autoplay@8.0.0-rc12(embla-carousel@8.0.0-rc12):
+    resolution: {integrity: sha512-r7kdzpUhnI6rjCjv1CVGJEIj0HF+gEqnO7ip7rLBmmyGZ5xGhO+pjKhAlG+JqCuqr1Xhk8mxO4aGkAxyq2nKAw==}
+    peerDependencies:
+      embla-carousel: 8.0.0-rc12
+    dependencies:
+      embla-carousel: 8.0.0-rc12
+    dev: false
+
   /embla-carousel-react@8.0.0-rc07(react@18.2.0):
     resolution: {integrity: sha512-8JX2kIMTbqHvsG6O0XRUHdZJ/66kyKCwFwFVZXZ1YpdrdMlrMHBNyIQP+ETBWgOsNtpbcBeWyZx29YtzCVLgJA==}
     peerDependencies:
@@ -1026,6 +1037,10 @@ packages:
 
   /embla-carousel@8.0.0-rc07:
     resolution: {integrity: sha512-IdGbZH042gRT0/3dOCbiv45jOt5E7jpM4h25VzyJujule/3GitJ1/Ib3U/X83auiI3aojKoBe13e1g5g7bwnjg==}
+    dev: false
+
+  /embla-carousel@8.0.0-rc12:
+    resolution: {integrity: sha512-/Xkf5zp9gs9Y45lSAT1Witn+r+o+EtoIIZg4V2lYTCaaqdDTxyO0Ddn+z00ya38JGNZrGH9U8wLGK5Hi76CRxw==}
     dev: false
 
   /es-abstract@1.21.2:
