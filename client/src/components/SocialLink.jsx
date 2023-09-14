@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 const SocialLink = ({setCopy, copy, className, handleCopy}) => {
 
-    return <ul className={`gap-5 ${className}`}>
+    return <ul className={`${className}`}>
     <li className="cursor-pointer">
         <Link to={"https://www.linkedin.com/in/vincent-avez-0a9539219/"}>
             <svg  width="46" height="46" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
