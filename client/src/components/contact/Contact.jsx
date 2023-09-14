@@ -33,7 +33,7 @@ export default function Contact() {
 
     return (
         <>
-            <section className='py-24 lg:px-48' id='contact'>
+            <section className='py-10 lg:py-20 lg:px-48' id='contact'>
 
                 <h2 className="text-center text-5xl font-bold">Contact</h2>
                 <form className='flex flex-col justify-center items-start mx-auto lg:w-1/3 gap-5 mt-10 p-5' onSubmit={handleSubmit}>
