@@ -1,9 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react';
 import SocialLink from '../SocialLink';
+import BurgerMenu, { useBurgerMenu } from './BurgerMenu';
+import Nav from './nav/Nav';
+import Menu from '../menu/Menu';
 
 
 export default function Header() {
     const [scrollPosition, setScrollPosition] = useState(0)
+    
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll, { passive: true });
@@ -21,46 +25,33 @@ export default function Header() {
     
 
     return (
-        <header className='min-h-screen max-h-screen flex items-center w-screen overflow-x-hidden max-w-screen bg-[#000249] px-5 lg:px-48 text-white'>
-            <nav 
-                className={`fixed left-0 top-0 z-50 w-full flex items-center backdrop-blur-md h-[60px] px-5 lg:px-48 duration-200
-                ${scrollPosition >= window.innerHeight - 20 ? "text-black bg-white" : "text-white bg-[#000249]"}
-                ${scrollPosition >= 15 ? "shadow" : null}
-                `}>
-                <a className='flex items-center gap-5' href='#'><img className='rounded-full' src="/Vincent_2_.webp" alt="logo du site" width={50} /> Comming soon....</a>
+        <header className='min-h-screen max-h-screen flex items-center w-screen overflow-x-hidden max-w-screen px-5 lg:px-48'>
+            <Nav />
+            
 
-                <ul className='space-x-10 hidden sm:flex items-center h-full uppercase text-sm font-medium mx-auto'>
-                    <li><a href={"#courses"}>Courses</a></li>
-                    <li><a href={"#skills"}>Skills</a></li>
-                    <a href='#'><img className='rounded-full' src="/Vincent_2_.webp" alt="logo du site" width={50} /></a>
-                    <li><a href={"#projects"}>Projects</a></li>
-                    <li><a href={"#contact"}>Contact</a></li>
-                </ul>
 
-            </nav>
-
-            <img className='absolute inset-0 min-h-screen min-w-screen blur-3xl z-0 animate-scale duration-200' src="./halo.png" autoPlay loop />
+            <img className='absolute inset-0 min-h-screen min-w-screen blur-xl sm:blur-2xl lg:blur-3xl z-0 animate-scale duration-200' src="./halo.png" autoPlay loop />
 
             <div className='flex flex-col w-full'>
 
-                <div className='flex justify-start lg:gap-40 w-full items-start z-10'>
+                <div className='flex flex-col sm:flex-row justify-start gap-5 lg:gap-40 w-full items-start z-10'>
                     <div className='relative flex flex-col justify-center items-start'>
                         <i className='text-xl font-bold text-blue-500'>Welcome by</i>
-                        <h1 className='text-center font-bold text-5xl lg:text-7xl mt-5'>AVEZ Vincent</h1>
-                        <h2 className="mt-2 w-[600px]">
+                        <h1 className='font-bold text-5xl lg:text-7xl mt-2 lg:mt-5'>AVEZ Vincent</h1>
+                        <h2 className="mt-2">
                             <span className='bg-gradient-to-r from-blue-500 via-green-400 to-green-400 text-transparent bg-clip-text font-medium'>
-                                Développeur Web Full Stack. 
-                            </span> Mais aussi indépendant dans mon activité.
+                                Développeur Web Full Stack.
+                            </span> Mais aussi indépendant <br/>dans mon activité.
                         </h2>
                         <button className='mt-5 border border-blue-500 py-2 px-4 rounded-full'>En savoir plus</button>
                     </div>
                     <img className='rounded-full w-40 sm:w-48 md:w-56 lg:w-72' src="/me.webp" alt="picture of Vincent" />
                 </div>
 
-                <div className='h-[1px] w-full bg-blue-700 mt-10 rounded-full' />
+                <div className='h-[1px] w-full bg-blue-700 mt-5 lg:mt-10 rounded-full' />
 
-                <div className='flex flex-wrap gap-10 z-10 relative mt-10'>
-                    <SocialLink className={"flex"} />
+                <div className='flex flex-wrap w-full gap-10 z-10 relative mt-5 lg:mt-10'>
+                    <SocialLink className={"flex justify-between sm:justify-normal sm:gap-10 w-full"} />
                 </div>
 
             </div>
