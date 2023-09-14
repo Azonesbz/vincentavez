@@ -1,28 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import SocialLink from '../SocialLink';
-import BurgerMenu, { useBurgerMenu } from './BurgerMenu';
 import Nav from './nav/Nav';
-import Menu from '../menu/Menu';
 
 
 export default function Header() {
-    const [scrollPosition, setScrollPosition] = useState(0)
-    
-
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll, { passive: true });
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
-
-
-    let handleScroll = () => {
-        const position = window.pageYOffset
-        setScrollPosition(position)
-    }
-
-    
 
     return (
         <header className='min-h-screen max-h-screen flex items-center w-screen overflow-x-hidden max-w-screen px-5 lg:px-48'>
@@ -58,7 +39,7 @@ export default function Header() {
 
             <a
                 className='animate-one absolute bottom-0 sm:bottom-5 rounded-full duration-1000 left-[50%] translate-x-[-50%] z-10'
-                href={"#courses"}
+                href={"#skills"}
             >
                 <svg className='animate-bounce' width="40" height="40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="m6 9 6 6 6-6"></path>
