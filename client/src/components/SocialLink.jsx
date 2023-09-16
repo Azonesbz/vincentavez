@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-const SocialLink = ({setCopy, copy, className, handleCopy}) => {
+const SocialLink = ({className, handleCopy}) => {
 
     return <ul className={`${className}`}>
     <li className="cursor-pointer">
