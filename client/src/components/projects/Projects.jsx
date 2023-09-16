@@ -8,7 +8,7 @@ export default function Portfolio(){
         stacks: ['NodeJS', "React","Redux", "TailwindCSS", "SQL"]
     }
     const Uncore = {
-        images: ["uncore-presentations.webp", "uncore.webp"],
+        images: ["uncore-presentations.webp"],
         stacks: ['PHP', "React","Redux", "SCSS", "SQL"]
     }
     const Whispee = {
