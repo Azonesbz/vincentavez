@@ -28,9 +28,9 @@ export default function Footer(){
             <footer className="container py-10 ">
                 <div className="flex flex-col items-center justify-center">
                     <a href={"/"} className="w-full flex justify-center" ref={imgRef}>
-                        <img src="Vincent_2_.webp" alt="logo" width={100} height={100} />
+                        <img className="rounded-full" src="Vincent_2_.webp" alt="logo" width={100} height={100} />
                     </a>
-                <SocialLink className={"flex mt-5"} handleCopy={handleCopy} />
+                    <SocialLink className={"flex gap-10 mt-5"} handleCopy={handleCopy} />
                 </div>
                 <footer className="pt-5 flex justify-center min-w-screen">
                     <i className="text-sm text-stone-500 mx-auto border-t-[1px] w-96 text-center border-stone-400 pt-5">Copyright © 2023 Azones Inc. All Rights Reserved.</i>
