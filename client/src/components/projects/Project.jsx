@@ -12,7 +12,7 @@ const Project = ({project, name, date, github, subName, children}) => {
     const [emblaRef] = useEmblaCarousel(embla_OPTIONS, [Autoplay()])
     return (
         <div className="mt-10 flex flex-col col-span-12 md:col-span-6 sm:rounded-3xl bg-[#071952] p-2">
-            <div className="overflow-hidden sm:rounded-3xl max-h-min h-min" ref={emblaRef}>
+            {project.images.length > 1 ? <div className="overflow-hidden sm:rounded-3xl max-h-min h-min" ref={emblaRef}>
                 <div className="flex cursor-grab">
                     {project.images.map((image, index) => (
                         <div className="flex flex-[0_0_100%] min-w-0" key={index}>
@@ -22,7 +22,8 @@ const Project = ({project, name, date, github, subName, children}) => {
                         </div>
                     ))}
                 </div>
-            </div>
+            </div> : <img className='h-full object-cover rounded-3xl' src={project.images} alt={project.images} width={1280} height={720} />}
+            
             <div className="flex flex-col justify-between p-2 text-white rounded-b-3xl mt-2">
                 <div className='flex flex-col'>
                     <div className="flex justify-between items-start">
