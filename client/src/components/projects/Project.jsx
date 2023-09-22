@@ -12,7 +12,7 @@ const Project = ({project, name, date, github, subName, children}) => {
     const [emblaRef] = useEmblaCarousel(embla_OPTIONS, [Autoplay()])
     return (
         <div className="mt-10 flex flex-col col-span-12 md:col-span-6 sm:rounded-3xl bg-[#071952] p-2">
-            {project.images.length > 1 ? <div className="overflow-hidden sm:rounded-3xl max-h-min h-min" ref={emblaRef}>
+            {project.images.length > 1 ? <div className="overflow-hidden sm:rounded-3xl max-h-min h-min rounded-3xl" ref={emblaRef}>
                 <div className="flex cursor-grab">
                     {project.images.map((image, index) => (
                         <div className="flex flex-[0_0_100%] min-w-0" key={index}>
