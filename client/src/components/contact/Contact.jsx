@@ -36,10 +36,10 @@ export default function Contact() {
             <section className='py-10 lg:py-20 lg:px-48' id='contact'>
 
                 <h2 className="text-center text-5xl font-bold">Contact</h2>
-                <form className='flex flex-col justify-center items-start mx-auto lg:w-1/3 gap-5 mt-10 p-5' onSubmit={handleSubmit}>
+                <form className='flex flex-col justify-center items-start mx-auto lg:w-1/3 mt-10 p-2 text-black bg-[#071952] rounded-3xl' onSubmit={handleSubmit}>
                     <div className='flex flex-col w-full'>
                         <input
-                            className='focus:border-l max-w-2xl focus:ml-5 focus:pl-5 pl-2 py-2 border-black outline-none duration-100 shadow rounded-tr-3xl'
+                            className='p-3 outline-none duration-100 shadow rounded-t-3xl'
                             placeholder='Email'
                             id="email"
                             type="email"
@@ -57,7 +57,7 @@ export default function Contact() {
                     <div className='flex flex-col w-full'>
                         <textarea
                         placeholder='Message'
-                            className='focus:border-l focus:ml-5 focus:pl-5 px-2 py-2 border-black outline-none duration-100 shadow rounded-r-3xl h-48'
+                            className='p-3 outline-none duration-100 shadow rounded-b-3xl h-48'
                             minLength={5}
                             id="message"
                             name="message"
@@ -68,7 +68,7 @@ export default function Contact() {
                             errors={state.errors}
                         />
                     </div>
-                    <button type="submit" disabled={state.submitting} className='mt-5 mr-full w-48 bg-[#000249] text-white py-2 px-4 mx-auto rounded-3xl font-semibold'>
+                    <button type="submit" disabled={state.submitting} className='mt-5 w-full bg-[#22668D] text-white py-2 px-4 mx-auto rounded-3xl font-semibold'>
                         Envoyer
                     </button>
                 </form>
