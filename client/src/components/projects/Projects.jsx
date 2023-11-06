@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Project from "./Project";
+import Section from "../Section";
 
 export default function Portfolio(){
 
@@ -18,8 +19,7 @@ export default function Portfolio(){
 
     return (
         <>
-            <section className="lg:px-48 py-5" id="projects">
-                <h2 className="text-center text-5xl font-bold">Projects</h2>
+            <Section className="lg:px-48 py-5" title={"Projets"} id="projects">
                 <div className="grid grid-cols-12 gap-5">
                     <Project project={Uncore} name={"Uncore"} subName={"Bientôt disponible à tous"} date={"06/03/2023"}>
                             <p>Un très gros projet arrive et sera disponible début 2024.</p>
@@ -42,7 +42,7 @@ export default function Portfolio(){
 
                     </Project>
                 </div>
-            </section>
+            </Section>
         </>
     )
 }

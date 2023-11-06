@@ -1,27 +1,33 @@
 import { useRef, useState } from "react";
-import Timeline from "../Timeline/Timeline";
-import TimelineProps from "../Timeline/TimelineProps";
+import Section from "../Section";
 
-export default function Career() {
-    const [date, setDate] = useState(new Date())
-    const TimelineRef = useRef(null)
+const Courses = () => {
     return (
-        <>
-            <div className="min-w-screen h-1 bg-gradient-to-b from-[#000249] to-transparent" />
-            <section className="lg:px-48 min-h-full flex-grow w-full relative z-1 py-24 " id="courses">
-                <h2 className="text-center z-0 font-bold text-5xl">Courses</h2>
-                <Timeline className="mt-16" ref={TimelineRef}>
-                    <TimelineProps date={2021} title={"Fac d'anglais à l'université du Mans"}>
-                        <p>J'ai obtenu mon baccalauréat, il est temps pour moi de continuer mes études. J'ai décidé de m'orienté vers une fac d'anglais, mais j'ai vite arrêter pour me consacrer à une activité que j'aime réellement.</p>
-                    </TimelineProps>
-                    <TimelineProps date={2023} title={"J'ai obtenu mon titre RNCP de niveau 5"}>
-                        <p>J'ai contacter la 3WAcademy pour intégrer leurs formation de développeur et concepteur d'application web, j'ai immédiatement accroché du fait que c'est 90% de pratique ! C'est totalement ce qu'il me fallait.</p>
-                    </TimelineProps>
-                    <TimelineProps date={2023} title={"Actuellement en recherche d'alternance"}>
-                        <p>Nous sommes donc le {date.getDate()}/{(date.getUTCMonth() + 1) < 10 ? "0" + (date.getUTCMonth() + 1) : (date.getUTCMonth() + 1) } et je suis à la recherche de "The entreprise". </p>
-                    </TimelineProps>
-                </Timeline>
-            </section>
-        </>
-    )
+      <>
+        <div className="min-w-screen h-1 bg-gradient-to-b from-[#000249] to-transparent" />
+        <Section className="px-2 lg:px-48 py-5" title={"Parcours"} id="courses">
+          <div className="grid grid-cols-2 gap-5 p-2 rounded-3xl">
+            <iframe className="object-contain col-span-2 sm:col-span-1  h-[25em] w-full rounded-3xl" src="https://www.youtube.com/embed/AOQXgih3Fjo" title="Rencontre avec Vincent, apprenant développeur full-stack à la 3W Academy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div className="bg-[#071952] rounded-3xl p-5 col-span-2 sm:col-span-1">
+              <h3 className="underline font-bold underline-offset-4">Je suis étudiant à la 3W Academy</h3>
+              <div className="space-y-2 mt-5">
+                <p>
+                  J'ai commencé par apprendre le développement web en
+                  autodidacte, puis je me suis orienté vers un organisme de
+                  formation qui à un processus d'apprentissage lié à la
+                  pratique.
+                </p>
+                <p>
+                  J'ai obtenu mon diplôme de développeur et concepteur
+                  d'application web le 12 mai 2023, ce qui m'a permis de
+                  continuer mes études dans ce domaine.
+                </p>
+              </div>
+            </div>
+          </div>
+        </Section>
+      </>
+    );
 }
+
+export default Courses

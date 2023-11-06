@@ -28,7 +28,7 @@ const Project = ({project, name, date, github, subName, children}) => {
                 <div className='flex flex-col'>
                     <div className="flex justify-between items-start">
                         <div className='flex gap-5 items-end'>
-                            <h3 className='font-semibold text-2xl bg-gradient-to-r from-blue-400 to-green-500 text-transparent bg-clip-text pb-5 pr-10'>{name} | <span>{subName}</span></h3>
+                            <h3 className='font-semibold text-2xl bg-gradient-to-r from-blue-400 to-green-500 text-transparent bg-clip-text pb-5 sm:pr-10'>{name} | <span>{subName}</span></h3>
                         </div>
                         <i className="text-sm">{date}</i>
                     </div>

@@ -1,10 +1,10 @@
+import Section from "../Section"
 import Skill from "./Skill"
 
 const Skills = () => {
     return (
         <>
-            <section className="px-2 lg:px-48 py-5" id="skills">
-                <h2 className="text-center text-5xl font-bold">Skills</h2>
+            <Section className="px-2 lg:px-48 py-5" title="Compétences" id="skills">
                 <div className="flex flex-col sm:flex-row sm:gap-20 justify-center lg:gap-48 w-full mt-10">
                     <Skill title={"Front-end"}>
                         <ul className="flex flex-col">
@@ -29,7 +29,7 @@ const Skills = () => {
                         </ul>
                     </Skill>
                 </div>
-            </section>
+            </Section>
         </>
     )
 }
